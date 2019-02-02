@@ -1,4 +1,7 @@
 cache
+__notes__
+.DS_Store
+.ipynb_checkpoints
 .doit.db
 .doit.db.db
 __pycache__
