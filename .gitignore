@@ -2,7 +2,8 @@ cache
 __notes__
 .DS_Store
 .ipynb_checkpoints
-.doit.db
-.doit.db.db
+.doit.db.*
 __pycache__
 output
+._*
+.Trashes
