@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demo Site</title><link>https://example.com/</link><description>This is a demo site for Nikola.</description><atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:joe@demo.site"&gt;Your Name&lt;/a&gt; </copyright><lastBuildDate>Mon, 04 Feb 2019 15:09:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>first tiny bit</title><link>https://example.com/posts/first-tiny-bit/</link><dc:creator>Your Name</dc:creator><description>&lt;p&gt;Trying out different site generators. Nikola is first. Yea! \( e^{ix} = \cos{x} + i \sin{x} \) works fine!&lt;/p&gt;</description><guid>https://example.com/posts/first-tiny-bit/</guid><pubDate>Sat, 02 Feb 2019 15:07:54 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Demo Site</title><link>https://example.com/</link><description>This is a demo site for Nikola.</description><atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:joe@demo.site"&gt;Your Name&lt;/a&gt; </copyright><lastBuildDate>Mon, 04 Feb 2019 20:09:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Time series</title><link>https://example.com/posts/Time%20series/</link><dc:creator>Your Name</dc:creator><description>&lt;div&gt;&lt;h2&gt;Time Series&lt;/h2&gt;
+&lt;p&gt;Educated as an Electrical engineer early in life and having more recently worked as a 'quant' for many years,the topic of time series analysis has evolved from a clean one to a bewildering hodgepodge of complications.&lt;/p&gt;
+&lt;p&gt;Some fudamental issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Transactional - data from markets are records of transactional events and not uniformaly sampled; therefore, times series are non-homogeneous.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stationarity - market data are not necesarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shfits) are not uncommon.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ergodicity - practioners often analyze time series to aid in prediction; but under what condition can the histories of sampled paths be considered representative of future behavior?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are other issues like low signal-to-noise, high-dimensionality, and outliers -- these are more generic problems though.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Traditionally an engineer dealing with signals mainly work with Fourier transforms and related objects.&lt;/p&gt;
+&lt;p&gt;$$
+f(x) = \int_{-\infty}^{\infty} \hat f(\xi) e^{2 \pi i \xi x} d\xi 
+$$&lt;/p&gt;
+&lt;p&gt;Clean and elegant. This formalism is fundamental and will not likely ever diminish in stature.&lt;/p&gt;&lt;/div&gt;</description><guid>https://example.com/posts/Time%20series/</guid><pubDate>Mon, 04 Feb 2019 19:34:54 GMT</pubDate></item><item><title>first tiny bit</title><link>https://example.com/posts/first-tiny-bit/</link><dc:creator>Your Name</dc:creator><description>&lt;p&gt;Trying out different site generators. Nikola is first. Yea! \( e^{ix} = \cos{x} + i \sin{x} \) works fine!&lt;/p&gt;</description><guid>https://example.com/posts/first-tiny-bit/</guid><pubDate>Sat, 02 Feb 2019 15:07:54 GMT</pubDate></item></channel></rss>

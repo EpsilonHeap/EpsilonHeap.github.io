@@ -11,7 +11,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://example.com/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/first-tiny-bit/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/Time%20series/" type="text/html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 </head>
 <body>
@@ -68,7 +68,48 @@
     
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/first-tiny-bit/" class="u-url">first tiny bit</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/Time%20series/" class="u-url">Time series</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Your Name
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/Time%20series/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-02-04T19:34:54Z" itemprop="datePublished" title="2019-02-04 19:34">2019-02-04 19:34</time></a>
+            </p>
+                        <p class="commentline">
+        
+    <a href="posts/Time%20series/#disqus_thread" data-disqus-identifier="cache/posts/ts.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h2>Time Series</h2>
+<p>Educated as an Electrical engineer early in life and having more recently worked as a 'quant' for many years,the topic of time series analysis has evolved from a clean one to a bewildering hodgepodge of complications.</p>
+<p>Some fudamental issues:</p>
+<ul>
+<li>
+<p>Transactional - data from markets are records of transactional events and not uniformaly sampled; therefore, times series are non-homogeneous.</p>
+</li>
+<li>
+<p>Stationarity - market data are not necesarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shfits) are not uncommon.</p>
+</li>
+<li>
+<p>Ergodicity - practioners often analyze time series to aid in prediction; but under what condition can the histories of sampled paths be considered representative of future behavior?</p>
+</li>
+</ul>
+<p>There are other issues like low signal-to-noise, high-dimensionality, and outliers -- these are more generic problems though.</p>
+<hr>
+<p>Traditionally an engineer dealing with signals mainly work with Fourier transforms and related objects.</p>
+<p>$$
+f(x) = \int_{-\infty}^{\infty} \hat f(\xi) e^{2 \pi i \xi x} d\xi 
+$$</p>
+<p>Clean and elegant. This formalism is fundamental and will not likely ever diminish in stature.</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/first-tiny-bit/" class="u-url">first tiny bit</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Your Name
