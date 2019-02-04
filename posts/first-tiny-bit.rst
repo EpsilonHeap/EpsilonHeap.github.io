@@ -8,6 +8,4 @@
 .. type: text
 .. has_math: True
 
-Trying out different site generators. Nikola is first.
-Another line with some displayed math $$ \\int{x^2}{dx} $$.
-Inlined math here: \\( \\lambda \\)
+Trying out different site generators. Nikola is first. Yea! \\( e^{ix} = \\cos{x} + i \\sin{x} \\) works fine!
