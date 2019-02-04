@@ -6,5 +6,6 @@
 .. link: 
 .. description: 
 .. type: text
+.. has_math: True
 
-Trying out different site generators. Nikola is first.
+Trying out different site generators. Nikola is first. Yea! \\( e^{ix} = \\cos{x} + i \\sin{x} \\) works fine!
