@@ -99,16 +99,18 @@
 <p>Stationarity - market data are not necessarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shifts) are not uncommon.</p>
 </li>
 <li>
-<p>Ergodicity - practitioners often analyze time series to aid in prediction; but under what condition can the histories of sampled paths be considered representative of future behavior?</p>
+<p>Ergodicity - practitioners often analyze time series to aid in prediction; but under what condition can the histories of (single realizations of)sampled paths be considered representative of future behavior?</p>
 </li>
 </ul>
 <p>There are other issues like low signal-to-noise, high dimensionality, missing values, and outliers. Although these are important, the three highlighted undermine the applicability of traditional methods.</p>
 <hr>
+<h3>Transactional</h3>
 <p>Traditionally an engineer dealing with signals mainly work with Fourier transforms and related objects.</p>
 <p>$$
 f(x) = \int_{-\infty}^{\infty} \hat f(\xi) e^{2 \pi i \xi x} d\xi 
 $$</p>
-<p>Clean and elegant. This formalism is fundamental and will not likely ever diminish in stature.</p>
+<p>Clean and elegant. This formalism is fundamental and will not likely ever diminish in stature. Yet quantitative-minded participants in finance, in particular currency traders of the late 1990's, pointed out a significant characteristics of the data of their trade that needed addressing:
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=208278">Operators on Inhomogeneous Time Series</a>. A central idea underlying inhomogeneous time series is that 'time' is proportional to the density of 'activity'. With regards to the 'information' content of inhomogeneous market data, this paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1989555">'Discerning Information from Trade Data'</a> describes a aggregated 'tick' or 'bar' approach - essentially integrating pieces of data partitioned by time into informational units for analysis. Aside: a good presentation of the many pitfalls encountered by financial professionals are in Marcos Lopez de Prado's <a href="https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109">'Advances in Financial Machine Learning'</a>. A Jupyter notebook in the blog post <a href="http://www.blackarbs.com/blog/exploring-alternative-price-bars">'Exploring Alternative Price Bars'</a> illustrates this approach.</p>
 </div>
                 </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/first-tiny-bit/" class="u-url">first tiny bit</a></h1>
