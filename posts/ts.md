@@ -37,3 +37,22 @@ $$
 Clean and elegant. This formalism is fundamental and will not likely ever diminish in stature. Yet quantitative-minded participants in finance, in particular currency traders of the late 1990's, pointed out a significant characteristics of the data of their trade that needed addressing:
 [Operators on Inhomogeneous Time Series](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=208278). A central idea underlying inhomogeneous time series is that 'time' is proportional to the density of 'activity'. With regards to the 'information' content of inhomogeneous market data, this paper ['Discerning Information from Trade Data'](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1989555) describes a aggregated 'tick' or 'bar' approach - essentially integrating pieces of data partitioned by time into informational units for analysis. Aside: a good presentation of the many pitfalls encountered by financial professionals are in Marcos Lopez de Prado's ['Advances in Financial Machine Learning'](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109). A Jupyter notebook in the blog post ['Exploring Alternative Price Bars'](http://www.blackarbs.com/blog/exploring-alternative-price-bars) illustrates this approach.
 
+---
+
+## Non-Stationary Data
+
+Over an intermediate time-span, market data fluctuate in a relatively well-behaved manner, and statistical observations like mean-reversion are relevant and expected. On a longer time-scale, statistically 'rare' events are not so uncommon in real markets. In other words, statistical models stop making sense when markets go wild - a good indicator that market prices are not necessarily stationary (see [Integration, Cointegration, and Stationarity](https://www.youtube.com/watch?v=Pn_RiDbK82M&t=160s) for examples of non-stationary time series that are rather tame. Beware though that using integer differentiation may remove information content. See chapter 5 of ['Advances in Financial Machine Learning'](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109) or look up fractional differentiation.)
+
+<!---
+memory effects
+-->
+Bottom line is that market data needs to be analyzed and transformed before statistical methods are applicable as intended. Then again, many methods of Machine Learning work well in practice without a rigorous understanding of why they work. In any case, a usual suspect for why a model has limited or no predictive ability post construction is because the model was formulated with non-stationary data. Good sites examining fundamental issues in applying scientific theory to economics is [Ergodicity Economics](https://ergodicityeconomics.com/) and to markets is [Quantitative Finance](http://www.quantresearch.info/).
+
+---
+
+<!---
+## Eogodicity
+
+[Ole Peters](https://www.youtube.com/watch?v=LGqOH3sYmQA)
+[Taleb](https://www.youtube.com/watch?v=qA_6BWkC4og)
+-->
