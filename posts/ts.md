@@ -14,15 +14,15 @@
 
 Educated as an Electrical engineer early in life and having more recently worked as a 'quant' for many years,the topic of time series analysis has evolved from a clean one to a bewildering hodgepodge of complications.
 
-Some fudamental issues:
+Some fundamental issues:
 
- + Transactional - data from markets are records of transactional events and not uniformaly sampled; therefore, times series are non-homogeneous.
+ + Transactional - data from markets are records of transactional events and not uniformly sampled; therefore, times series are non-homogeneous.
  
- + Stationarity - market data are not necesarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shfits) are not uncommon.
+ + Stationarity - market data are not necessarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shifts) are not uncommon.
 
- + Ergodicity - practioners often analyze time series to aid in prediction; but under what condition can the histories of sampled paths be considered representative of future behavior?
+ + Ergodicity - practitioners often analyze time series to aid in prediction; but under what condition can the histories of sampled paths be considered representative of future behavior?
 
- There are other issues like low signal-to-noise, high-dimensionality, and outliers -- these are more generic problems though.
+ There are other issues like low signal-to-noise, high dimensionality, missing values, and outliers. Although these are important, the three highlighted undermine the applicability of traditional methods.
 
 ---
 
