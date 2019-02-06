@@ -41,7 +41,7 @@ Clean and elegant. This formalism is fundamental and will not likely ever dimini
 
 ## Non-Stationary Data
 
-Over an intermediate time-span, market data fluctuate in a relatively well-behaved manner, and statistical observations like mean-reversion are relevant and expected. On a longer time-scale, statistically 'rare' events are not so uncommon in real markets. In other words, statistical models stop making sense when markets go wild - a good indicator that market prices are not necessarily stationary (see [Integration, Cointegration, and Stationarity](https://www.youtube.com/watch?v=Pn_RiDbK82M&t=160s) for examples of non-stationary time series that are rather tame. Beware though that using integer differentiation may remove information content. See chapter 5 of ['Advances in Financial Machine Learning'](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109) or look up fractional differentiation.)
+Over an intermediate time-span, market data fluctuate in a relatively well-behaved manner, and statistical observations like mean-reversion are relevant and expected. On a longer time-scale, statistically 'rare' events are not so uncommon in real markets. In other words, statistical models stop making sense when markets go wild - a good indicator that market prices are not necessarily stationary (see [Integration, Cointegration, and Stationarity](https://www.youtube.com/watch?v=Pn_RiDbK82M&t=160s) for examples of non-stationary time series that are rather tame. Beware though that using integer differentiation may remove information content. See chapter 5 of ['Advances in Financial Machine Learning'](https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109) or look up fractional differentiation for financial data.)
 
 <!---
 memory effects
@@ -50,9 +50,11 @@ Bottom line is that market data needs to be analyzed and transformed before stat
 
 ---
 
-<!---
-## Eogodicity
+## Ergodicity
 
-[Ole Peters](https://www.youtube.com/watch?v=LGqOH3sYmQA)
-[Taleb](https://www.youtube.com/watch?v=qA_6BWkC4og)
--->
+Equivalence of ensemble-average and time-average with respect to some sampled statistics is an important subject. [Gaveau and Schulman](https://arxiv.org/abs/1401.7224) questioned whether ergodicity is a reasonable hypothesis - many applications only require 'reasonably'-sized samples. An article by [Persi Diaconis](https://statweb.stanford.edu/~cgates/PERSI/papers/mixing.pdf) explore this for practitioners. [Ole Peters](https://www.youtube.com/watch?v=LGqOH3sYmQA) has put forth commendable effort at explaining
+the real-world implications of using ensemble quantities when individuals experience but one life. [Nassim Taleb](https://www.youtube.com/watch?v=qA_6BWkC4og) discusses ergodicity from a trader's perspective.
+
+Even though the age of immense computing power and massive data collection is upon us, A better understanding of how many representative examples are enough for a good approximation is more important then ever. Reason being that society is putting more faith than ever into systems trained by examples, whether they are generated (games and such) or collected.
+
+---

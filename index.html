@@ -113,19 +113,18 @@ $$</p>
 <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=208278">Operators on Inhomogeneous Time Series</a>. A central idea underlying inhomogeneous time series is that 'time' is proportional to the density of 'activity'. With regards to the 'information' content of inhomogeneous market data, this paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1989555">'Discerning Information from Trade Data'</a> describes a aggregated 'tick' or 'bar' approach - essentially integrating pieces of data partitioned by time into informational units for analysis. Aside: a good presentation of the many pitfalls encountered by financial professionals are in Marcos Lopez de Prado's <a href="https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109">'Advances in Financial Machine Learning'</a>. A Jupyter notebook in the blog post <a href="http://www.blackarbs.com/blog/exploring-alternative-price-bars">'Exploring Alternative Price Bars'</a> illustrates this approach.</p>
 <hr>
 <h3>Non-Stationary Data</h3>
-<p>Over an intermediate time-span, market data fluctuate in a relatively well-behaved manner, and statistical observations like mean-reversion are relevant and expected. On a longer time-scale, statistically 'rare' events are not so uncommon in real markets. In other words, statistical models stop making sense when markets go wild - a good indicator that market prices are not necessarily stationary (see <a href="https://www.youtube.com/watch?v=Pn_RiDbK82M&amp;t=160s">Integration, Cointegration, and Stationarity</a> for examples of non-stationary time series that are rather tame. Beware though that using integer differentiation may remove information content. See chapter 5 of <a href="https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109">'Advances in Financial Machine Learning'</a> or look up fractional differentiation.)</p>
+<p>Over an intermediate time-span, market data fluctuate in a relatively well-behaved manner, and statistical observations like mean-reversion are relevant and expected. On a longer time-scale, statistically 'rare' events are not so uncommon in real markets. In other words, statistical models stop making sense when markets go wild - a good indicator that market prices are not necessarily stationary (see <a href="https://www.youtube.com/watch?v=Pn_RiDbK82M&amp;t=160s">Integration, Cointegration, and Stationarity</a> for examples of non-stationary time series that are rather tame. Beware though that using integer differentiation may remove information content. See chapter 5 of <a href="https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482109">'Advances in Financial Machine Learning'</a> or look up fractional differentiation for financial data.)</p>
 <!---
 memory effects
 -->
 
 <p>Bottom line is that market data needs to be analyzed and transformed before statistical methods are applicable as intended. Then again, many methods of Machine Learning work well in practice without a rigorous understanding of why they work. In any case, a usual suspect for why a model has limited or no predictive ability post construction is because the model was formulated with non-stationary data. Good sites examining fundamental issues in applying scientific theory to economics is <a href="https://ergodicityeconomics.com/">Ergodicity Economics</a> and to markets is <a href="http://www.quantresearch.info/">Quantitative Finance</a>.</p>
 <hr>
-<!---
-## Eogodicity
-
-[Ole Peters](https://www.youtube.com/watch?v=LGqOH3sYmQA)
-[Taleb](https://www.youtube.com/watch?v=qA_6BWkC4og)
--->
+<h3>Ergodicity</h3>
+<p>Equivalence of ensemble-average and time-average with respect to some sampled statistics is an important subject. <a href="https://arxiv.org/abs/1401.7224">Gaveau and Schulman</a> questioned whether ergodicity is a reasonable hypothesis - many applications only require 'reasonably'-sized samples. An article by <a href="https://statweb.stanford.edu/~cgates/PERSI/papers/mixing.pdf">Persi Diaconis</a> explore this for practitioners. <a href="https://www.youtube.com/watch?v=LGqOH3sYmQA">Ole Peters</a> has put forth commendable effort at explaining
+the real-world implications of using ensemble quantities when individuals experience but one life. <a href="https://www.youtube.com/watch?v=qA_6BWkC4og">Nassim Taleb</a> discusses ergodicity from a trader's perspective.</p>
+<p>Even though the age of immense computing power and massive data collection is upon us, A better understanding of how many representative examples are enough for a good approximation is more important then ever. Reason being that society is putting more faith than ever into systems trained by examples, whether they are generated (games and such) or collected.</p>
+<hr>
 </div>
                 </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/first-tiny-bit/" class="u-url">first tiny bit</a></h1>
