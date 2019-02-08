@@ -9,3 +9,4 @@
 .. has_math: True
 
 Trying out different site generators. Nikola is first. Yea! \\( e^{ix} = \\cos{x} + i \\sin{x} \\) works fine!
+Now try adding [GatsbyJS](https://www.gatsbyjs.org/) under the Nikola structure to take advantage of the dynamic features of that infrastructure.

@@ -17,10 +17,10 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Your Name"  # (translatable)
-BLOG_TITLE = "Demo Site"  # (translatable)
+BLOG_TITLE = "Epsilon Heap"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://example.com/"
+SITE_URL = "https://epsilonheap.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://example.com/"
@@ -136,6 +136,8 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/gatsby-dir/index.html", "Gatsby"),
+        ("/pages/home/index.html", "Pages"),
         ("/archive.html", "Archives"),
         ("/categories/index.html", "Tags"),
         ("/rss.xml", "RSS feed"),
@@ -429,7 +431,7 @@ HIDDEN_TAGS = ['mathjax']
 # using a forward slash ('/') to separate paths. Use a backslash ('\') to escape
 # a forward slash or a backslash (i.e. '\//\\' is a path specifying the
 # subcategory called '\' of the top-level category called '/').
-CATEGORY_ALLOW_HIERARCHIES = False
+CATEGORY_ALLOW_HIERARCHIES = True
 # If CATEGORY_OUTPUT_FLAT_HIERARCHY is set to True, the output written to output
 # contains only the name of the leaf category and not the whole path.
 CATEGORY_OUTPUT_FLAT_HIERARCHY = False
@@ -536,7 +538,7 @@ HIDDEN_AUTHORS = ['Guest']
 # Final location for the main blog page and sibling paginated pages is
 # output / TRANSLATION[lang] / INDEX_PATH / index-*.html
 # (translatable)
-# INDEX_PATH = ""
+# INDEX_PATH = "blog"
 
 # Optional HTML that displayed on “main” blog index.html files.
 # May be used for a greeting. (translatable)
