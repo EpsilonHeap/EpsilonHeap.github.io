@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="This is a demo site for Nikola.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demo Site</title>
+<title>Epsilon Heap</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link href="assets/css/ipython.min.css" rel="stylesheet" type="text/css">
 <link href="assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
@@ -12,8 +12,8 @@
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
-<link rel="canonical" href="https://example.com/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/Time%20series/" type="text/html">
+<link rel="canonical" href="https://epsilonheap.github.io/">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/kelly-with-drawdown/" type="text/html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 </head>
 <body>
@@ -31,9 +31,9 @@
             </div>
         </div>
           <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
-            <a class="navbar-brand blog-header-logo text-dark" href="https://example.com/">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://epsilonheap.github.io/">
 
-            <span id="blog-title">Demo Site</span>
+            <span id="blog-title">Epsilon Heap</span>
         </a>
           </div>
             <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
@@ -42,6 +42,12 @@
     </div>
 </header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
             <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="gatsby-dir/index.html" class="nav-link">Gatsby</a>
+                </li>
+<li class="nav-item">
+<a href="pages/home/index.html" class="nav-link">Pages</a>
+                </li>
 <li class="nav-item">
 <a href="archive.html" class="nav-link">Archives</a>
                 </li>
@@ -70,7 +76,41 @@
     
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/Time%20series/" class="u-url">Time series</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/kelly-with-drawdown/" class="u-url">Kelly with Drawdown</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Your Name
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/kelly-with-drawdown/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-02-07T20:43:54Z" itemprop="datePublished" title="2019-02-07 20:43">2019-02-07 20:43</time></a>
+            </p>
+                        <p class="commentline">
+        
+    <a href="posts/kelly-with-drawdown/#disqus_thread" data-disqus-identifier="cache/posts/kelly-with-drawdown.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h2>Kelly Gambling</h2>
+<p>Portfolio management is a pillar of asset management. Given resources and many avenues for allocating said resources, how to allocate so as to achieve a desired effect? With regards to money, more is considered best, and with little chance of losing much would be ideal. Two views have received considerable attention on this topic. One approach is known as '<a href="https://www.investopedia.com/terms/m/modernportfoliotheory.asp">Modern Portfolio Theory</a>' and the other is '<a href="https://www.investopedia.com/articles/trading/04/091504.asp">Kelly Criterion</a>'. Warren Buffet <a href="http://undergroundvalue.blogspot.com/2008/02/notes-from-buffett-meeting-2152008_23.html">explains</a> the difference when asked by students: take advantage of an 'edge' where possible, and seek safety in numbers otherwise.</p>
+<p>Modern Portfolio Theory is taught in academia, and Kelly Criterion is mostly a method encountered by those asking 'is there another way?' This article on <a href="https://ergodicityeconomics.com/2018/02/16/the-trouble-with-bernoulli-1738/#more-3206">Bernoulli</a> and another on <a href="https://ergodicityeconomics.com/2017/07/18/doing-a-laplace/#more-102">Laplace</a> examine the fundamental difference of the two views and advocate for the Kelly approach. The latter article explains why the Kelly approach is less well known. Incidently, the criterion named after John Kelly is an of application of Claude Shannon's work to gambling - as detailed by <a href="http://home.williampoundstone.net/Kelly.htm">William Poundstone</a>.</p>
+<p>Enzo Busseti, Ernest Ryu, and <a href="http://web.stanford.edu/~boyd/">Stephen Boyd</a> (who oversees several areas of exciting research) published '<a href="https://arxiv.org/abs/1603.06183">Risk-Constrained Kelly Gambling</a>' which derives an approach to incorporate <a href="https://www.investopedia.com/terms/d/drawdown.asp">drawdown</a> with Kelly gambling. When speaking of risks, drawdown would be top of the list for many - more so when following a Kelly approach. With concentrated positions, the prospects of some big bets going awry would be disastrous whereas a highly diversified portfolio would suffer the same fate as the market as a whole. This paper combines Kelly gambling with risk aversion in a systematic way, and do so by casting the problem as <a href="http://web.stanford.edu/~boyd/cvxbook/">convex optimization</a>.</p>
+<p>$$
+\begin{array}{cl}
+maximize &amp; \mathbb{E}\log({r^\intercal b}) \cr[2ex]
+subject \; to &amp; \begin{aligned}
+\mathbb{E}(r^\intercal b)^{-\lambda} &amp; \leq 1 \cr
+\mathbb{I}^\intercal b &amp; = 1, b \geq 0
+\end{aligned}
+\end{array}
+$$</p>
+<p>A key result is that \( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \Rightarrow \mathbb{Prob}(W^{min} \lt \alpha) \lt \beta\) can be expressed as \( \mathbb{Prob}(W^{min} \lt \alpha) \lt \alpha^\lambda = \beta \) where \( \lambda = \frac{\log\beta}{\log \alpha} \)</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/Time%20series/" class="u-url">Time series</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Your Name
@@ -144,7 +184,8 @@ the real-world implications of using ensemble quantities when individuals experi
                 </p>
 </div>
             </header><div class="e-content entry-content">
-                    <p>Trying out different site generators. Nikola is first. Yea! \( e^{ix} = \cos{x} + i \sin{x} \) works fine!</p>
+                    <p>Trying out different site generators. Nikola is first. Yea! \( e^{ix} = \cos{x} + i \sin{x} \) works fine!
+Now try adding [GatsbyJS](<a class="reference external" href="https://www.gatsbyjs.org/">https://www.gatsbyjs.org/</a>) under the Nikola structure to take advantage of the dynamic features of that infrastructure.</p>
                 </div>
             </article>
 </div>

@@ -6,11 +6,11 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>https://example.com/rss.xml</loc>
-  <lastmod>2019-02-04T20:23:00Z</lastmod>
+  <loc>https://epsilonheap.github.io/rss.xml</loc>
+  <lastmod>2019-02-07T20:46:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>https://example.com/sitemap.xml</loc>
-  <lastmod>2019-02-04T20:23:00Z</lastmod>
+  <loc>https://epsilonheap.github.io/sitemap.xml</loc>
+  <lastmod>2019-02-07T20:46:00Z</lastmod>
  </sitemap>
 </sitemapindex>

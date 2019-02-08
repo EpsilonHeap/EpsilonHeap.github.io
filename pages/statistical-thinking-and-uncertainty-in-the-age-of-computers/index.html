@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Statistical Thinking and Uncertainty in the Age of Computers | Epsilon Heap</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://epsilonheap.github.io/pages/statistical-thinking-and-uncertainty-in-the-age-of-computers/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Your Name">
+<meta property="og:site_name" content="Epsilon Heap">
+<meta property="og:title" content="Statistical Thinking and Uncertainty in the Age of Computers">
+<meta property="og:url" content="https://epsilonheap.github.io/pages/statistical-thinking-and-uncertainty-in-the-age-of-computers/">
+<meta property="og:description" content="Historical Context
+Current approaches to Data Science, Machine Learning, Artificial Intelligence, and so on ... basically deal with statistical distributions in high dimensions that are shaped by the ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-02-06T19:55:36Z">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Header and menu bar -->
+<div class="container">
+      <header class="blog-header py-3"><div class="row nbb-header align-items-center">
+          <div class="col-md-3 col-xs-2 col-sm-2" style="width: auto;">
+            <button class="navbar-toggler navbar-light bg-light nbb-navbar-toggler" type="button" data-toggle="collapse" data-target=".bs-nav-collapsible" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse bs-nav-collapsible bootblog4-search-form-holder">
+                
+            </div>
+        </div>
+          <div class="col-md-6 col-xs-10 col-sm-10 bootblog4-brand" style="width: auto;">
+            <a class="navbar-brand blog-header-logo text-dark" href="https://epsilonheap.github.io/">
+
+            <span id="blog-title">Epsilon Heap</span>
+        </a>
+          </div>
+            <div class="col-md-3 justify-content-end align-items-center bs-nav-collapsible collapse flex-collapse bootblog4-right-nav">
+            <nav class="navbar navbar-light bg-white"><ul class="navbar-nav bootblog4-right-nav">
+<li class="nav-item">
+    <a href="index.md" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                    
+            </ul></nav>
+</div>
+    </div>
+</header><nav class="navbar navbar-expand-md navbar-light bg-white static-top"><div class="collapse navbar-collapse bs-nav-collapsible" id="bs-navbar">
+            <ul class="navbar-nav nav-fill d-flex w-100">
+<li class="nav-item">
+<a href="../../gatsby-dir/index.html" class="nav-link">Gatsby</a>
+                </li>
+<li class="nav-item">
+<a href="../home/index.html" class="nav-link">Pages</a>
+                </li>
+<li class="nav-item">
+<a href="../../archive.html" class="nav-link">Archives</a>
+                </li>
+<li class="nav-item">
+<a href="../../categories/index.html" class="nav-link">Tags</a>
+                </li>
+<li class="nav-item">
+<a href="../../rss.xml" class="nav-link">RSS feed</a>
+
+                
+            </li>
+</ul>
+</div>
+<!-- /.navbar-collapse -->
+</nav>
+</div>
+
+<div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+        
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Statistical Thinking and Uncertainty in the Age of Computers</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<h2>Historical Context</h2>
+<p>Current approaches to Data Science, Machine Learning, Artificial Intelligence, and so on ... basically deal with statistical distributions in high dimensions that are shaped by the algorithms and models used to operate upon and represent data, respectively.  This modern view was adopted by <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.stat.berkeley.edu%2Fusers%2Fbreiman%2F&amp;sa=D">Leo Breiman</a> as  fundamental to his approach to Statistics and is clearly described in '<a href="https://www.google.com/url?q=https%3A%2F%2Fprojecteuclid.org%2Feuclid.ss%2F1009213726&amp;sa=D">Statistical Modeling: The Two Cultures</a>'.</p>
+<p>Rewinding yet further, a watershed period in applied statistical and probabilistic thinking was perhaps defined by the work of <a href="https://www.google.com/url?q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHenri_Poincar%25C3%25A9&amp;sa=D">Henri Poincaré</a> and <a href="https://www.google.com/url?q=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLudwig_Boltzmann&amp;sa=D">Ludwig Boltzmann</a>. Games of chance or gambling paved the way for Probability and Statistics - start with uncertainty because determinism was beyond our calculations; however, at that time, the prevailing fundamental 'truth' was that the world is deterministic. Boltzmann changed that notion. He challenged the established Physics community with an 'atomic' view of the world which rendered determinism as a facade. The sheer magnitude of the numbers involved dictated a fundamentally statistical view of the world. Poincaré made the shift even more compelling by showing that even a formal description of a few components is rather hopeless. Instead, analysis of the characteristics of an 'ensemble' was powerful, revealing, and useful.</p>
+<p>Hopefully, another watershed moment is near as a product of the 'Computer Age'. In the meantime, studying the nature of uncertainty in high dimensions  seems rather important. Note that the previous sentence is composed of many vague terms; why not just say 'probability distributions' or such? The matter is one of perspective. Freeing the mind from a strictly probability measure view of uncertainty is more 'fun' - so to say.  For instance, <a href="https://www.google.com/url?q=http%3A%2F%2Fsipi.usc.edu%2F~mendel%2F&amp;sa=D">fuzzy sets</a> allow for subjective uncertainty of an objective value, and <a href="https://www.google.com/url?q=http%3A%2F%2Fwww.tamarabroderick.com%2Ftutorial_2016_mlss_cadiz.html&amp;sa=D">Bayesian nonparametrics</a> deal with open-ended inference where measures do not necessarily integrate to 1 (see videos <a href="https://www.youtube.com/watch?v=yfLoxwjCGNY">II</a> and <a href="https://www.youtube.com/watch?v=2H2n4iUYpZE">III</a> in particular.) Implementation of methods like MCMC, variational Bayesian methods, ... suggest that likelihood is, in a computational sense, more important than probability distributions. The former is a mechanism for making decisions, and the latter is an object for book keeping. An important point to  keep in mind though is that the concept of normalization is paramount in the context of emergent patterns with respect to scaling. Basically, there is no need to shoehorn everything into a probability measure.</p>
+<!-- 
+Steins's Method
+Concentration of Measure
+Optimal Transport
+Statistical Physics
+
+http://www.hawking.org.uk/does-god-play-dice.html
+Bayes
+Bradley Efron and Trevor Hastie, '[Computer Age Statistical Inference](https://www.google.com/url?q=https%3A%2F%2Fweb.stanford.edu%2F~hastie%2FCASI%2F&sa=D)' 
+-->
+</div>
+    </div>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha256-ExtbCSBuYA7kq1Pz362ibde9nnsHYPt6JxuxYeZbU+c=" crossorigin="anonymous"></script><script>
+                renderMathInElement(document.body,
+                    {
+                        delimiters: [
+                            {left: "$$", right: "$$", display: true},
+                            {left: "\\[", right: "\\]", display: true},
+                            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+                            {left: "\\(", right: "\\)", display: false}
+                        ]
+                    }
+                );
+            </script></article><!--End of body content--><footer id="footer">
+            Contents © 2019         <a href="mailto:joe@demo.site">Your Name</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+            
+        </footer>
+</div>
+</div>
+
+
+        <script src="../../assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
+    moment.locale("en");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates --><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
