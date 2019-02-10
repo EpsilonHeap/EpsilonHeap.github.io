@@ -107,6 +107,7 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
   1) Mellin integral transform
 
 ## Quantitative Finance
++ Kelly gambling
 + Volatility estimation
 + Convexity of trend following
 + Signal extraction
