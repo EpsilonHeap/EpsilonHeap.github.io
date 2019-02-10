@@ -29,4 +29,6 @@ subject \; to & \begin{aligned}
 \end{array}
 $$
 
-A key result is that \\( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \Rightarrow \mathbb{Prob}(W^{min} \lt \alpha) \lt \beta\\) can be expressed as \\( \mathbb{Prob}(W^{min} \lt \alpha) \lt \alpha^\lambda = \beta \\) where \\( \lambda = \frac{\log\beta}{\log \alpha} \\)
+where \\(r\\) is a matrix of returns for a set of investments, \\(b\\) is a vector of allocations, and \\(r^\intercal b\\) is then the gain in wealth of a portfolio. \\( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \\) will be expanded upon later. This constraint effectively bounds how much risk one is willing to take.
+
+A key result of the paper is that \\( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \Rightarrow \mathbb{Prob}(W^{min} \lt \alpha) \lt \beta\\). That is, the probability \\(W^{min}\\), a random variable of the minimum wealth, of being less that \\(\alpha\\) is less than \\(\beta\\), and is equivalent to the aforementioned 'degree' of risk constraint. A different symbolic way to see the interplay of \\(\alpha, \: \beta, \: and, \: \lambda \\) is \\( \mathbb{Prob}(W^{min} \lt \alpha) \lt \alpha^\lambda = \beta \\) where \\( \lambda = \frac{\log\beta}{\log \alpha} \\).
