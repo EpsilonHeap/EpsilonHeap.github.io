@@ -12,7 +12,7 @@
 
 # Time Series
 
-Educated as an Electrical engineer early in life and having more recently worked as a 'quant' for many years,the topic of time series analysis has evolved from a clean one to a bewildering hodgepodge of complications.
+Educated as an Electrical engineer early in life and having more recently worked as a 'quant' for many years, the topic of time series analysis has evolved from a clean one to a bewildering hodgepodge of complications; pretty much all of it because of the stochastic nature of markets.
 
 Some fundamental issues:
 
@@ -20,7 +20,7 @@ Some fundamental issues:
  
  + Stationarity - market data are not necessarily stationary and often have complicated time-delayed feedback structures. Moreover, change points (or regime shifts) are not uncommon.
 
- + Ergodicity - practitioners often analyze time series to aid in prediction; but under what condition can the histories of (single realizations of)sampled paths be considered representative of future behavior?
+ + Ergodicity - practitioners often analyze time series to aid in prediction; but under what condition can the histories of (single realizations of) sampled paths be considered representative of future behavior?
 
  There are other issues like low signal-to-noise, high dimensionality, missing values, and outliers. Although these are important, the three highlighted undermine the applicability of traditional methods.
 
