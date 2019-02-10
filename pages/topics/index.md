@@ -10,7 +10,6 @@
 .. has_math: True
 -->
 
-# Topics
 Research can broadly be classified into two 'Ying-Yang' categories of reinforcing components: exploration and explotation of knowledge or cognative abilities. Below is a list of topics covering the papers sitting on my desk. Although a small sample compared to those stored as bits on various devices, this list is representative of the results of 'exploration'. The organization and categorization is somewhat haphazard yet still revealing. A harder task is to distill this list into a research agenda.
 
 ## Fundamental
@@ -22,8 +21,12 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 + Stein's method
 + Universal Statistics of Selected Values
 + Noise
-+ Paradoxes and Puzzles
++ Paradoxes, Puzzles, and Counter-intuitive Results
   1) Simpson's paradox
+  2) St. Petersburg paradox
+  3) Siegel's paradox
+  4) Two-Envelop paradox
+  5) Arcsine law
 + Hard and Soft
   1) Generating functions
   2) Probability interpretation
@@ -35,7 +38,7 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 + Random matrix
 
 ## Issues
-+ When Big Data fails - coarse grain data dictates sentiments
++ When Big Data fails - when coarse grain data dictates sentiments
 + Adversarial samples
 
 ## Statistics

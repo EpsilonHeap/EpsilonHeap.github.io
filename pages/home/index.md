@@ -9,5 +9,7 @@
 .. type: text
 -->
 
+[Feeding my curiosity](../topics/index.html)
+
 [Statistical Thinking and Uncertainty in the Age of Computers](../statistical-thinking-and-uncertainty-in-the-age-of-computers/index.html)
 
