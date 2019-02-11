@@ -18,6 +18,8 @@ Rewinding yet further, a watershed period in applied statistical and probabilist
 
 Hopefully, another watershed moment is near as a product of the 'Computer Age'. In the meantime, studying the nature of uncertainty in high dimensions  seems rather important. Note that the previous sentence is composed of many vague terms; why not just say 'probability distributions' or such? The matter is one of perspective. Freeing the mind from a strictly probability measure view of uncertainty is more 'fun' - so to say.  For instance, [fuzzy sets](https://www.google.com/url?q=http%3A%2F%2Fsipi.usc.edu%2F~mendel%2F&sa=D) allow for subjective uncertainty of an objective value, and [Bayesian nonparametrics](https://www.google.com/url?q=http%3A%2F%2Fwww.tamarabroderick.com%2Ftutorial_2016_mlss_cadiz.html&sa=D) deal with open-ended inference where measures do not necessarily integrate to 1 (see videos [II](https://www.youtube.com/watch?v=yfLoxwjCGNY) and [III](https://www.youtube.com/watch?v=2H2n4iUYpZE) in particular.) Implementation of methods like MCMC, variational Bayesian methods, ... suggest that likelihood is, in a computational sense, more important than probability distributions. The former is a mechanism for making decisions, and the latter is an object for book keeping. An important point to  keep in mind though is that the concept of normalization is paramount in the context of emergent patterns with respect to scaling. Basically, there is no need to shoehorn everything into a probability measure.
 
+\[Note: '[Computer Age Statistical Inference](https://www.google.com/url?q=https%3A%2F%2Fweb.stanford.edu%2F~hastie%2FCASI%2F&sa=D)' by Bradly Efron and Trevor Hastie certainly influenced the title of this page.\]
+
 
 <!-- 
 Steins's Method

@@ -13,7 +13,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://epsilonheap.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/kelly-with-drawdown/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sparse-high-dimensional-regression/" type="text/html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 </head>
 <body>
@@ -76,7 +76,33 @@
     
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/kelly-with-drawdown/" class="u-url">Kelly with Drawdown</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/sparse-high-dimensional-regression/" class="u-url">Sparse High-Dimensional Regression</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Your Name
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/sparse-high-dimensional-regression/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-02-11T12:29:47Z" itemprop="datePublished" title="2019-02-11 12:29">2019-02-11 12:29</time></a>
+            </p>
+                        <p class="commentline">
+        
+    <a href="posts/sparse-high-dimensional-regression/#disqus_thread" data-disqus-identifier="cache/posts/sparse-high-dimensional-regression.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h2>What!?</h2>
+<p>This one falls under the 'mind-bending' category that has initiated a personal re-examination of the whole practice of regression. Bertsimas and Van Parys released <a href="https://arxiv.org/abs/1709.10029">'Sparse High-Dimensional Regression: Exact Scalable Algorithms and Phase Transitions'</a> upon the world and shook my foundations. <a href="http://www.mit.edu/~dbertsim/">Professor Bertsimas's</a> <a href="https://www.youtube.com/watch?v=7w9aRrYgGEs">Hotelling lecture</a> is a good video presentation of his approach to the topic.
+[Note: Optimization is a foundational showcase of the power of computing - pay attention to this field.]</p>
+<p>An earlier paper <a href="https://arxiv.org/abs/1507.03133">'Best Subset Selection via a Modern Optimization Lens'</a> started the buzz and elicited Trevor Hastie, Robert Tibshirani, and Ryan Tibshirani to respond with <a href="https://arxiv.org/abs/1707.08692">'Extended Comparisons of Best Subset Selection, Forward Stepwise Selection, and the Lasso'</a>.</p>
+<h2>Mixed Integer Optimization</h2>
+<p>...</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/kelly-with-drawdown/" class="u-url">Kelly with Drawdown</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Your Name
@@ -109,7 +135,7 @@ subject \; to &amp; \begin{aligned}
 $$</p>
 <p>where \(r\) is a matrix of returns for a set of investments, \(b\) is a vector of allocations, and \(r^\intercal b\) is then the gain in wealth of a portfolio. \( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \) will be expanded upon later. This constraint effectively bounds how much risk one is willing to take.</p>
 <p>A key result of the paper is that \( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \Rightarrow \mathbb{Prob}(W^{min} \lt \alpha) \lt \beta\). That is, the probability \(W^{min}\), a random variable of the minimum wealth, of being less that \(\alpha\) is less than \(\beta\), and is equivalent to the aforementioned 'degree' of risk constraint. A different symbolic way to see the interplay of \(\alpha, \: \beta, \: and, \: \lambda \) is \( \mathbb{Prob}(W^{min} \lt \alpha) \lt \alpha^\lambda = \beta \) where \( \lambda = \frac{\log\beta}{\log \alpha} \).</p>
-<p>The paper carefully presents several variations of the Kelly gamble, establishes bounds, and perform a comparative study, but what is highlighted above constitutes the heart of the matter for realistic applications.</p>
+<p>The paper carefully presents several variations of the Kelly gamble, establishes bounds, and performs a comparative study, but what is highlighted above constitutes the heart of the matter for realistic applications.</p>
 </div>
                 </div>
             </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/Time%20series/" class="u-url">Time series</a></h1>

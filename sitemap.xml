@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>https://epsilonheap.github.io/archive.html</loc>
-  <lastmod>2019-02-07T20:46:00Z</lastmod>
+  <lastmod>2019-02-11T12:29:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/categories/</loc>
@@ -60,5 +60,9 @@
  <url>
   <loc>https://epsilonheap.github.io/posts/kelly-with-drawdown/</loc>
   <lastmod>2019-02-07T20:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://epsilonheap.github.io/posts/sparse-high-dimensional-regression/</loc>
+  <lastmod>2019-02-11T12:29:00Z</lastmod>
  </url>
 </urlset>
