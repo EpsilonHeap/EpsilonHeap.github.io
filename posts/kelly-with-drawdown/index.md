@@ -34,3 +34,5 @@ where \\(r\\) is a matrix of returns for a set of investments, \\(b\\) is a vect
 A key result of the paper is that \\( \mathbb{E}(r^\intercal b)^{-\lambda} \leq 1 \Rightarrow \mathbb{Prob}(W^{min} \lt \alpha) \lt \beta\\). That is, the probability \\(W^{min}\\), a random variable of the minimum wealth, of being less that \\(\alpha\\) is less than \\(\beta\\), and is equivalent to the aforementioned 'degree' of risk constraint. A different symbolic way to see the interplay of \\(\alpha, \: \beta, \: and, \: \lambda \\) is \\( \mathbb{Prob}(W^{min} \lt \alpha) \lt \alpha^\lambda = \beta \\) where \\( \lambda = \frac{\log\beta}{\log \alpha} \\).
 
 The paper carefully presents several variations of the Kelly gamble, establishes bounds, and performs a comparative study, but what is highlighted above constitutes the heart of the matter for realistic applications.
+
+---
