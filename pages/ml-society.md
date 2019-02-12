@@ -30,10 +30,10 @@ Hardware and software, intermediate by the brilliance of human minds, were and s
 
 What are the reciprocating forces of ML/AI? Some might suggests that the aforementioned data-computing duo; however, that seems like a hard sell. As the rebuttal article linked above suggests, data gathering for the sake of human-computer common pattern baseline is advanced, and more of it offers a diminishing returns. The statistical character of Human languages, faces, pictures of cats, etc have been established, and these do not change rapidly nor significantly over time. Gathering more data for these established baselines will not likely yield great advances. Additional value-add would need to come from integration of data streams, specializing for a niche, new sources of data, or rapidly changing data. And of these, those that will yield stable statistical characterization will reach maturity and trend towards diminishing returns. The prospects of reinforcing growth from generation to generation is not so clear. Lets enumerate:
 
-1) Integration (data-fusion) is more a problem of methodologies.
-2) Specialization means gathering data for a specific use and is not meant to have broad catalytic effects. Perhaps massive specialization as a whole can turn the collective process into a growth driver.
-3) New sources of data is unknowable. Maybe finer details (similar to weather prediction) would be enough. Another prospect leaves humans out of the loop - computers can generate data with no meaning for us amongst themselves.
-4) Rapidly changing data seems like a good candidate ... except for the rapid part. Ephemeral patterns, unless a meta pattern emerges, would not be a good foundation for further advancements.
+1. Integration (data-fusion) is more a problem of methodologies.
+2. Specialization means gathering data for a specific use and is not meant to have broad catalytic effects. Perhaps massive specialization as a whole can turn the collective process into a growth driver.
+3. New sources of data is unknowable. Maybe finer details (similar to weather prediction) would be enough. Another prospect leaves humans out of the loop - computers can generate data with no meaning for us amongst themselves.
+4. Rapidly changing data seems like a good candidate ... except for the rapid part. Ephemeral patterns, unless a meta pattern emerges, would not be a good foundation for further advancements.
 
 Let me be clear. Currently, data as examples of a desired (or undesirable) pattern is still highly valuable. Much resources is direct at this effort and rightly so; the game is still young. The questions is of sustainability of an 'age' as in 'industrial', 'iron', 'computer'. Is more data a foundation of sustained advancements?
 
