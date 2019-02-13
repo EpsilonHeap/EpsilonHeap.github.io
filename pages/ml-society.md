@@ -32,19 +32,19 @@ What are the reciprocating forces of ML/AI? Some might suggests that the aforeme
 
 # Digging for Data Gold
 
-The prospects of reinforcing growth from generation to generation is not so clear. Lets enumerate:
+The prospects of reinforcing growth from generation to generation anchored by data is not so clear. Lets enumerate:
 
 1. Integration (data-fusion) is more a problem of methodologies.
 2. Specialization means gathering data for a specific use and is not meant to have broad catalytic effects. Perhaps massive specialization as a whole can turn the collective process into a growth driver.
 3. New sources of data is unknowable. Maybe finer details (similar to weather prediction) would be enough. Another prospect leaves humans out of the loop - computers can generate data with no meaning for us amongst themselves.
 4. Rapidly changing data seems like a good candidate ... except for the rapid part. Ephemeral patterns, unless a meta pattern emerges, would not be a good foundation for further advancements.
 
-Let me be clear. Currently, data as examples of a desired (or undesirable) pattern is still highly valuable. Much resources is direct at this effort and rightly so; the game is still young. [Endeavors]((https://www.technologyreview.com/s/612897/this-is-why-ai-has-yet-to-reshape-most-businesses/)) to employ data and ML/AI to markedly reshape businesses take time to bear fruit, and a great deal of the effort is spent on the data.
+Let me be clear. Currently, data as examples of a desired (or undesirable) pattern are still highly valuable. Much resources is direct at this effort and rightly so; the game is still young. [Endeavors]((https://www.technologyreview.com/s/612897/this-is-why-ai-has-yet-to-reshape-most-businesses/)) to employ data and ML/AI to markedly reshape businesses take time to bear fruit, and a great deal of the effort is spent on the data.
 The question is of the sustainability of an 'age' as in 'industrial', 'iron', or 'computer'. Is more data a foundation for sustained advancements?
 
-On the other hand, computing seem to a good foundational piece for the next generation. Then a conundrum seems to be at hand. Data sells for good money and is consider valuable (Facebook, Amazon, and likes are data-driven companies.) Yet computing power (clouds) is cheap, and algorithms (ML/AI frameworks) are given away. My guess is that this situation will likely turn. The current situation is a product of the 'ramping up' stage.
+On the other hand, computing seem to be a good foundational piece for the next generation. Then a conundrum seems to be at hand. Data sells for good money and is consider valuable (Facebook, Amazon, and likes are data-driven companies.) Yet computing power (clouds) is cheap, and algorithms (ML/AI frameworks) are given away. My guess is that this situation will likely turn. The current situation is a product of the 'ramping up' stage.
 
-Recall that the thought experiment was regarding the prospects of exponential advancement in ML/AI over the a period comparable to the computer age. The intent was not to discount data or Data Science, which will continue to grow and flourish. But probably at a pace akin to automobiles or lasers - substantial yet less than explosive.
+Recall that the thought experiment was regarding the prospects of exponential advancement in ML/AI over the a period comparable to the computer age. The intent was not to discount data or the data part of Data Science, which will continue to grow and flourish. But probably at a pace akin to automobiles or lasers - substantial yet less than explosive.
 
 <!-- China Data Farms -->
 
