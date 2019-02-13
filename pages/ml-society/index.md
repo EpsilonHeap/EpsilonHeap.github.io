@@ -13,10 +13,10 @@
 
 ## Progress
 
-Consider what a Machine Learning and Artificial Intellegence (ML/AI) fueled transformation of society might be like. Or perhaps what cornerstones would be required to make an acceptable transition to such a society -- acceptable in the sense that humans are integral.
+Consider what a Machine Learning and Artificial Intelligence (ML/AI) fueled transformation of society might be like. Or perhaps what cornerstones would be required to make an acceptable transition to such a society -- acceptable in the sense that humans are integral.
 
 The computer revolution propelled our world to a current standing that harkens a new kind of society. Data (by the way of communications networks) and computing are considered the new 'oil' \[see this [rebuttal](https://venturebeat.com/2019/02/10/data-is-not-the-new-oil/)\]
-and 'electricty' that will enabled tremendous growth. Will this vision be realized? Recall that AI had previously [under-delivered](https://en.wikipedia.org/wiki/AI_winter) in a earlier incarnations.
+and 'electricity' that will enabled tremendous growth. Will this vision be realized? Recall that AI had previously [under-delivered](https://en.wikipedia.org/wiki/AI_winter) in a earlier incarnations.
 
 But first, let's put progress in perspective. Tyler Cowen's [TED Talk](https://www.youtube.com/watch?v=_93CXTt2K7c) suggests that innovation for society as a whole has stagnated. And in a telling set of lectures by Richard Hamming on advancements in science and technologies, [he](https://www.youtube.com/watch?v=AD4b-52jtos) clearly advocates that computers are the future. In both cases, computing is highlighted as a rare case where progress exceeded expectations! Will this wave of ML/AI follow a similar trajectory for be another case of hype over substance? [Note: ML/AI has made tremendous progress. Although not at the level being touted by some.]
 
@@ -45,6 +45,8 @@ The question is of the sustainability of an 'age' as in 'industrial', 'iron', or
 On the other hand, computing seem to a good foundational piece for the next generation. Then a conundrum seems to be at hand. Data sells for good money and is consider valuable (Facebook, Amazon, and likes are data-driven companies.) Yet computing power (clouds) is cheap, and algorithms (ML/AI frameworks) are given away. My guess is that this situation will likely turn. The current situation is a product of the 'ramping up' stage.
 
 Recall that the thought experiment was regarding the prospects of exponential advancement in ML/AI over the a period comparable to the computer age. The intent was not to discount data or Data Science, which will continue to grow and flourish. But probably at a pace akin to automobiles or lasers - substantial yet less than explosive.
+
+<!-- China Data Farms -->
 
 # Computing for the Win
 
