@@ -39,7 +39,8 @@ The prospects of reinforcing growth from generation to generation is not so clea
 3. New sources of data is unknowable. Maybe finer details (similar to weather prediction) would be enough. Another prospect leaves humans out of the loop - computers can generate data with no meaning for us amongst themselves.
 4. Rapidly changing data seems like a good candidate ... except for the rapid part. Ephemeral patterns, unless a meta pattern emerges, would not be a good foundation for further advancements.
 
-Let me be clear. Currently, data as examples of a desired (or undesirable) pattern is still highly valuable. Much resources is direct at this effort and rightly so; the game is still young. The questions is of sustainability of an 'age' as in 'industrial', 'iron', or 'computer'. Is more data a foundation for sustained advancements?
+Let me be clear. Currently, data as examples of a desired (or undesirable) pattern is still highly valuable. Much resources is direct at this effort and rightly so; the game is still young. [Endeavors]((https://www.technologyreview.com/s/612897/this-is-why-ai-has-yet-to-reshape-most-businesses/)) to employ data and ML/AI to markedly reshape businesses take time to bear fruit, and a great deal of the effort is spent on the data.
+The question is of the sustainability of an 'age' as in 'industrial', 'iron', or 'computer'. Is more data a foundation for sustained advancements?
 
 On the other hand, computing seem to a good foundational piece for the next generation. Then a conundrum seems to be at hand. Data sells for good money and is consider valuable (Facebook, Amazon, and likes are data-driven companies.) Yet computing power (clouds) is cheap, and algorithms (ML/AI frameworks) are given away. My guess is that this situation will likely turn. The current situation is a product of the 'ramping up' stage.
 
@@ -54,5 +55,9 @@ Architecture
 Connection machine -->
 
 
-<!-- Ironically, besides computing, human brain power, does seem to be a key ingredient. Hence, the mad scramble for human capital with the right expertise seems appropriate. -->
+<!-- Ironically, besides computing, human brain power, does seem to be a key ingredient. Hence, the mad scramble for human capital with the right expertise seems appropriate. 
+ML/AI and humans.
+make better humans (cyborgs)?
+enhance human minds.
+-->
 
