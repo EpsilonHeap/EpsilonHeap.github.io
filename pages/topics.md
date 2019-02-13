@@ -14,22 +14,22 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 
 ## Fundamental
 + High dimensional space
-  1) Sparsity
-  2) Symplectic geometry
+  1. Sparsity
+  2. Symplectic geometry
 + Concentration of measure
 + Completely random measures
 + Stein's method
 + Universal Statistics of Selected Values
 + Noise
 + Paradoxes, Puzzles, and Counter-intuitive Results
-  1) Simpson's paradox
-  2) St. Petersburg paradox
-  3) Siegel's paradox
-  4) Two-Envelop paradox
-  5) Arcsine law
+  1. Simpson's paradox
+  2. St. Petersburg paradox
+  3. Siegel's paradox
+  4. Two-Envelop paradox
+  5. Arcsine law
 + Hard and Soft
-  1) Generating functions
-  2) Probability interpretation
+  1. Generating functions
+  2. Probability interpretation
 + Ergodicity
 + Dimensional analysis
 + Exchangeable variables
@@ -82,13 +82,13 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
   
 ## Machine Learning Methods
 + Boosting
-  1) Adaboost
-  2) Xgboost
+  1. Adaboost
+  2. Xgboost
 + Automation
 + Auto-encoding variational Bayes
 + Sigma-Point Kalman Filters
 + Reinforcement learning
-  1) Q-Learning
+  1. Q-Learning
 + Hashing for similarity search
 + Regularizating DNN by noise
 + Imperfect-Information games
@@ -104,7 +104,7 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 + Word embedding
 + Fuzzy Sets
 + Fractional calculus
-  1) Mellin integral transform
+  1. Mellin integral transform
 
 ## Quantitative Finance
 + Kelly gambling
@@ -121,6 +121,3 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 + Accelerators for Linear Learning
 + Compressed sensing
 + Frames
-
-
-
