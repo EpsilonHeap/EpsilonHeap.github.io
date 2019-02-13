@@ -28,7 +28,11 @@ Hardware and software, intermediate by the brilliance of human minds, were and s
 
 [Economics]
 
-What are the reciprocating forces of ML/AI? Some might suggests that the aforementioned data-computing duo; however, that seems like a hard sell. As the rebuttal article linked above suggests, data gathering for the sake of human-computer common pattern baseline is advanced, and more of it offers a diminishing returns. The statistical character of Human languages, faces, pictures of cats, etc have been established, and these do not change rapidly nor significantly over time. Gathering more data for these established baselines will not likely yield great advances. Additional value-add would need to come from integration of data streams, specializing for a niche, new sources of data, or rapidly changing data. And of these, those that will yield stable statistical characterization will reach maturity and trend towards diminishing returns. The prospects of reinforcing growth from generation to generation is not so clear. Lets enumerate:
+What are the reciprocating forces of ML/AI? Some might suggests that the aforementioned data-computing duo; however, that seems like a hard sell. As the rebuttal article linked above suggests, data gathering for the sake of human-computer common pattern baseline is advanced, and more of it offers a diminishing returns. The statistical character of Human languages, faces, pictures of cats, etc have been established, and these do not change rapidly nor significantly over time. Gathering more data for these established baselines will not likely yield great advances. Additional value-add would need to come from integration of data streams, specializing for a niche, new sources of data, or rapidly changing data. And of these, those that will yield stable statistical characterization will reach maturity and trend towards diminishing returns. 
+
+# Digging for Data Gold
+
+The prospects of reinforcing growth from generation to generation is not so clear. Lets enumerate:
 
 1. Integration (data-fusion) is more a problem of methodologies.
 2. Specialization means gathering data for a specific use and is not meant to have broad catalytic effects. Perhaps massive specialization as a whole can turn the collective process into a growth driver.
@@ -41,4 +45,14 @@ On the other hand, computing seem to a good foundational piece for the next gene
 
 Recall that the thought experiment was regarding the prospects of exponential advancement in ML/AI over the a period comparable to the computer age. The intent was not to discount data or Data Science, which will continue to grow and flourish. But probably at a pace akin to automobiles or lasers - substantial yet less than explosive.
 
+# Computing for the Win
+
+Well, at least one cornerstone is secured, right? Maybe. Moore's Law is facing headwind.
+
+<!-- Lasers may yet offer hope
+Architecture
+Connection machine -->
+
+
 <!-- Ironically, besides computing, human brain power, does seem to be a key ingredient. Hence, the mad scramble for human capital with the right expertise seems appropriate. -->
+
