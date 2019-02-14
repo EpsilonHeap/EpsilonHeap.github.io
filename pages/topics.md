@@ -10,7 +10,7 @@
 .. has_math: True
 -->
 
-Research can broadly be classified into two 'Ying-Yang' categories of reinforcing components: exploration and explotation of knowledge or cognative abilities. Below is a list of topics covering the papers sitting on my desk. Although a small sample compared to those stored as bits on various devices, this list is representative of the results of 'exploration'. The organization and categorization is somewhat haphazard yet still revealing. A harder task is to distill this list into a research agenda.
+Research can broadly be classified into two 'Ying-Yang' categories of reinforcing components: exploration and exploitation of knowledge or cognitive abilities. Below is a list of topics covering the papers sitting on my desk. Although a small sample compared to those stored as bits on various devices, this list is representative of the results of 'exploration'. The organization and categorization is somewhat haphazard yet still revealing. A harder task is to distill this list into a research agenda.
 
 ## Fundamental
 + High dimensional space
@@ -94,7 +94,7 @@ Research can broadly be classified into two 'Ying-Yang' categories of reinforcin
 + Imperfect-Information games
 + Document analysis with transducers
 + Probabilistic Reasoning
-+ Reserviour computing
++ Reservoir computing
 + Hierarchical clustering
 + Bayesian nonparametrics
 + Sentiment analysis

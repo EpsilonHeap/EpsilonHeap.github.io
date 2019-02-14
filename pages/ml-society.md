@@ -63,3 +63,37 @@ make better humans (cyborgs)?
 enhance human minds.
 -->
 
+# Speculations
+
+<!-- 
+competitive forces
+resources
+encoding (indirection)
+human-computers
+enhancement
+    interpretable
+    encoding
+    assisted
+    generative
+computable concepts?
+    train-of-thought
+    word computing
+    guessing
+    style
+    self-direction
+strengths
+    ml/ai
+        specialist
+        high dimensional patterns
+        speed
+        recognition
+    humans
+        generalist
+        creativity
+        deep thoughts
+        reasoning
+rich veins
+    GANS
+    imperfect information games
+    open-end inference
+-->
