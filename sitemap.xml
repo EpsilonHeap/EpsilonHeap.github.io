@@ -7,66 +7,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://epsilonheap.github.io/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/2019/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-02T15:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/archive.html</loc>
-  <lastmod>2019-02-11T12:29:00Z</lastmod>
+  <lastmod>2019-02-14T21:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/categories/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-02T15:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://epsilonheap.github.io/galleries/</loc>
+  <lastmod>2019-02-02T15:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/gatsby-dir/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/gatsby-dir/404.html</loc>
-  <lastmod>2019-02-07T00:47:00Z</lastmod>
+  <lastmod>2019-02-09T02:02:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/gatsby-dir/404/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/gatsby-dir/page-2/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://epsilonheap.github.io/listings/</loc>
+  <lastmod>2019-02-02T15:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/pages/home/</loc>
-  <lastmod>2019-02-06T20:30:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/pages/ml-society/</loc>
-  <lastmod>2019-02-13T01:57:00Z</lastmod>
+  <lastmod>2019-02-12T18:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/pages/statistical-thinking-and-uncertainty-in-the-age-of-computers/</loc>
-  <lastmod>2019-02-06T19:57:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/pages/topics/</loc>
-  <lastmod>2019-02-10T17:35:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
-  <loc>https://epsilonheap.github.io/posts/Time%20series/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <loc>https://epsilonheap.github.io/posts/ensemble-trees/</loc>
+  <lastmod>2019-02-14T21:43:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/posts/first-tiny-bit/</loc>
-  <lastmod>2019-02-07T00:48:00Z</lastmod>
+  <lastmod>2019-02-02T15:09:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/posts/kelly-with-drawdown/</loc>
-  <lastmod>2019-02-07T20:46:00Z</lastmod>
+  <lastmod>2019-02-10T17:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://epsilonheap.github.io/posts/sparse-high-dimensional-regression/</loc>
-  <lastmod>2019-02-11T12:29:00Z</lastmod>
+  <lastmod>2019-02-12T18:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://epsilonheap.github.io/posts/time%20series/</loc>
+  <lastmod>2019-02-14T01:19:00Z</lastmod>
  </url>
 </urlset>

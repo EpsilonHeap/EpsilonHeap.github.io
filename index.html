@@ -13,7 +13,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://epsilonheap.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sparse-high-dimensional-regression/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/ensemble-trees/" type="text/html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 </head>
 <body>
@@ -76,7 +76,42 @@
     
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/sparse-high-dimensional-regression/" class="u-url">Sparse High-Dimensional Regression</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/ensemble-trees/" class="u-url">Ensemble Trees</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Your Name
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/ensemble-trees/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-02-14T16:35:13Z" itemprop="datePublished" title="2019-02-14 16:35">2019-02-14 16:35</time></a>
+            </p>
+                        <p class="commentline">
+        
+    <a href="posts/ensemble-trees/#disqus_thread" data-disqus-identifier="cache/posts/ensemble-trees.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<h2>Chasing the Deep End</h2>
+<p>Deep this, deep that; not that there is anything wrong with that. Why? because deep neural-networks (now being referred to as <a href="https://www.facebook.com/yann.lecun/posts/10155003011462143">differential programming</a> by one of its pioneers) is one of milestone advancements in ML/AI and have many applications. So generally powerful and useful that it is now a fundamental design component for higher-level systems tailored for specific domains (see <a href="https://www.youtube.com/watch?v=QuELiw8tbx8">Stanford lecture</a> and <a href="https://www.youtube.com/watch?v=oGk1v1jQITw">Deep Learning School presentation</a> by <a href="https://www.socher.org/">Richard Sochar</a>). As an electrical engineer by academic title, this systems approach is comfortably familiar, very much like circuits design.</p>
+<p>Another 'component' that has been very useful, powerful, and efficient falls under the category of ensemble trees - especially the <a href="https://en.wikipedia.org/wiki/Gradient_boosting">boosting</a> variant. In a sense, ensemble trees are both deep and wide. The number of tree layers control depth versus breath, and an ensemble overlay offer wide exploration of features and relationships to observed outcomes. Yet more 'deepness' could be had by employing a component approach where elements are wired together.</p>
+<p>Table 10.1 of <a href="https://web.stanford.edu/~hastie/ElemStatLearn/">'The Elements of Statistical Learning'</a> compares trees-based methods to some contemporaries. Although much progress has been been made since its publication, most of the characterizations still hold. In particular, efficiency, forbearance with regards to feature data, and interpretability are outstanding advantages. </p>
+<h2>Results and Insights</h2>
+<p>These qualities are differentiators where decisions are costly in terms of the cost of doing experiments, collecting data, and unsatisfactory consequences. Of course, mistakes are unavoidable and tree-base methods are typically less accurate, but being clueless about why something works or fails can be a <a href="https://www.risk.net/asset-management/6119616/blackrock-shelves-unexplainable-ai-liquidity-models">no go</a> - you cannot learn from your mistakes. For medical use, a lack of reasoning is not comforting. In a research setting, gaining insights from interpretable models are more useful than raw accuracy. Tree-based methods can also be applied early on as part of a systematic application of data science - they are good at taking available data without much preprocessing and identifying influential features. They are fast and relatively easy to use.</p>
+<h2>Building on a Good Idea</h2>
+<p>Ensembles, tree-based models, bagging, and boosting make for great companions. Some nifty variants on this combinations are:</p>
+<ol>
+<li>Random Forests</li>
+<li>Xgboost</li>
+<li>Catboost</li>
+<li>mboost</li>
+<li>gamboostLSS</li>
+</ol>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/sparse-high-dimensional-regression/" class="u-url">Sparse High-Dimensional Regression</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Your Name
