@@ -32,6 +32,6 @@ To wit: Tensorflow, in a short time-span, will have changed from one execution m
 
 Another would be 'high energy' disguised as motivation. Many people are motivated but not self-directed, and you need both. A self-directed individual needs guidance but not much management. Be careful to see aspiration in a clear light.
 
-Lastly, do not dismiss but make room for intuition. This is one of those terms that are hard to define but not too difficult to recognize. Not too difficult because this trait is often express as a 'magical' ability to formulate solutions or ask the right questions. Ask hard, open-ended questions and observe what ensues. The answer doesn't have to be right, just penetrating or meandering towards plausible reasoning. Questions like those on an academic test (or puzzles if just a matter of memorization) that elicit some expected answers seldom highlight intuition.
+Lastly, do not dismiss but make room for intuition. This is one of those terms that are hard to define but not too difficult to recognize. Not too difficult because this trait is often expressed as a 'magical' ability to formulate solutions or ask the right questions. Ask hard, open-ended questions and observe what ensues. The answer doesn't have to be right, just penetrating or meandering towards plausible reasoning. Questions like those on an academic test (or puzzles if just a matter of memorization) that elicit some expected answers seldom highlight intuition.
 
 ---
