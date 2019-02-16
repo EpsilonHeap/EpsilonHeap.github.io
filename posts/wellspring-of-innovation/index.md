@@ -20,7 +20,7 @@ Two examples of organizations that have engineered innovation on a large-scale a
 [John Seely Brown](http://www.johnseelybrown.com/) (JSB) ran Xerox's research organization during my time there. [Here](https://www.youtube.com/watch?v=amdONcqQvnU) is a fun and informative video of his take on research at Xerox. JSB uses a triad of aspiration, imagination, and intuition as pillars supporting his concept of 'taste'. The culture that he described was real and clearly evident in how research managers operated - [Steve Hoover](https://www.xerox.com/en-us/about/executive-leadership/corporate-officers/steve-hoover-biography), now CTO at Xerox, expounded these same core ideas when our discussions turned to how research was done at Xerox.
 JSB's description of the preference for 'edge' workers and the importance of 'taste' is traditional and was passed down from the days of [Robert Taylor](https://www.wired.com/2017/04/youve-never-heard-tech-legend-bob-taylor-invented-almost-everything/).
 
-Yet another legendary organization was Bell Labs. [Richard Hamming](https://history.computer.org/pioneers/hamming.html) was in the thick of things there and gave a personalized set of lectures (which starts [here](https://www.youtube.com/watch?v=AD4b-52jtos)) on being successful in intellectual pursuits.  He also mentions 'taste' as being vital to channeling efforts into good work.
+Yet another legendary organization was Bell Labs. [Richard Hamming](https://history.computer.org/pioneers/hamming.html) was in the thick of things there and gave a personalized set of lectures (which starts [here](https://www.youtube.com/watch?v=AD4b-52jtos)) on being successful in intellectual pursuits.  He also mentioned 'taste' as being vital to channeling efforts into good work.
 
 # From Elusive to Vague
 
@@ -32,6 +32,6 @@ To wit: Tensorflow, in a short time-span, will have changed from one execution m
 
 Another would be 'high energy' disguised as motivation. Many people are motivated but not self-directed, and you need both. A self-directed individual needs guidance but not much management. Be careful to see aspiration in a clear light.
 
-Lastly, do not dismiss but make room for intuition. This is one of those terms that are hard to define but not too difficult to recognize. Not too difficult because this trait is often express as a 'magical' ability to formulate solutions or ask the right questions. Ask hard, open-ended questions and observe what ensues. The answer doesn't have to be right, just penetrating or meandering towards plausible reasoning. Questions like those on an academic test (or puzzles if just a matter of memorization) that elicits some expected answers seldom highlight intuition.
+Lastly, do not dismiss but make room for intuition. This is one of those terms that are hard to define but not too difficult to recognize. Not too difficult because this trait is often express as a 'magical' ability to formulate solutions or ask the right questions. Ask hard, open-ended questions and observe what ensues. The answer doesn't have to be right, just penetrating or meandering towards plausible reasoning. Questions like those on an academic test (or puzzles if just a matter of memorization) that elicit some expected answers seldom highlight intuition.
 
 ---
