@@ -136,8 +136,9 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ("/gatsby-dir/index.html", "Gatsby"),
+        ("/index.html", "Blog"),
         ("/pages/home/index.html", "Pages"),
+        ("/gatsby-dir/index.html", "Gatsby"),
         ("/archive.html", "Archives"),
         ("/categories/index.html", "Tags"),
         ("/rss.xml", "RSS feed"),
