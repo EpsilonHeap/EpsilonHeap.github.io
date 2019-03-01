@@ -54,7 +54,9 @@ Well, at least one cornerstone is secured, right? Maybe. Moore's Law is facing h
 
 <!-- Lasers may yet offer hope
 Architecture
-Connection machine -->
+Connection machine 
+Power Consumption
+-->
 
 
 <!-- Ironically, besides computing, human brain power, does seem to be a key ingredient. Hence, the mad scramble for human capital with the right expertise seems appropriate. 
