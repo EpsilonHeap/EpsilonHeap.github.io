@@ -9,8 +9,8 @@
 .. type: text
 .. has_math: True
 -->
-
-Pursuit of knowledge, research, art, companions, sports and any number of wonderful things are the best of what the human experience has to offer. One that is sometimes neglected is to invest for life. Financial freedom relieves many unpleasant problems and investing should be one of your pursuits
+---
+Pursuit of knowledge, research, art, companions, sports and any number of wonderful things are the best of what the human experience has to offer. One that is sometimes neglected is to invest for life. Financial freedom relieves many unpleasant problems, and investing should be one of your pursuits
 
 Managing wealth is a good problem to have, and the 'best' approach is in the eyes of the beholder. Moreover, objectives are subject to change over time; however, one fundamental rule is to stay financially 'alive'. Even in the worst of times, be sure that sufficient funds are available to rekindle the fire. 
 
