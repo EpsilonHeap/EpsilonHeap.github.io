@@ -13,7 +13,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://epsilonheap.github.io/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/wellspring-of-innovation/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/application-of-machine-learning-in-quantitative-finance/" type="text/html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
 </head>
 <body>
@@ -79,7 +79,64 @@
     
         
     <div class="postindex">
-            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/wellspring-of-innovation/" class="u-url">Wellspring of Innovation</a></h1>
+            <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/application-of-machine-learning-in-quantitative-finance/" class="u-url">Application of Machine Learning in Quantitative Finance</a></h1>
+                <div class="metadata">
+                    <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                        Your Name
+                    </span></p>
+            <p class="dateline">
+            <a href="posts/application-of-machine-learning-in-quantitative-finance/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-06-12T19:18:53Z" itemprop="datePublished" title="2019-06-12 19:18">2019-06-12 19:18</time></a>
+            </p>
+                        <p class="commentline">
+        
+    <a href="posts/application-of-machine-learning-in-quantitative-finance/#disqus_thread" data-disqus-identifier="cache/posts/application-of-machine-learning-in-quantitative-finance.html">Comments</a>
+
+
+                </p>
+</div>
+            </header><div class="e-content entry-content">
+                    <div>
+<hr>
+<h2>Two Worlds Colliding</h2>
+<p>Markets are noisy and ever changing; moreover, fluctuations can be rather large and persistent. The nature and character of markets offer significant challenges for machine learning (ML) algorithms. For instance:</p>
+<ul>
+<li>low signal-to-noise<ul>
+<li>'signals' that convey information about markets are often highly obscured by 'noise'.</li>
+<li>ML algorithms are designed to recognize or approximate patterns that are the most prevalent, and market are mostly noise.</li>
+</ul>
+</li>
+<li>regime changes<ul>
+<li>markets are constantly evolving, fluctuations can be large, and statistical characteristics can change quickly.</li>
+<li>current ML algorithms are specialists that do not handle outliers and new situations well.</li>
+</ul>
+</li>
+<li>market inferences should be robust<ul>
+<li>'signals' are not useful for market predictions if slight differences in what is observed lead to very different predictions.</li>
+<li>some ML methods are brittle - see <a href="https://www.youtube.com/watch?v=Yr1mOzC93xs">video</a> and <a href="https://arxiv.org/abs/1711.11561">paper</a> by Bengio - and small difference in input lead to notably different predictions.</li>
+</ul>
+</li>
+</ul>
+<p>Recognition of the conflicting nature of markets and the current crop of ML algorithms is important in devising new approaches to using the ideas learned from ML in quantitative finance.</p>
+<p>Emphasis here is on introducing the powerful, foundational ideas of ML to the design of trading algorithms as oppose to using existing ML methods as tools for trading. Or as <a href="https://www.youtube.com/watch?v=CW0DUg63lqU">Steve Jobs</a> famously quoted of Picasso in an interview: “good artists borrow, great artists steal.”</p>
+<h2>Ideas That Transcend</h2>
+<p>What ideas are considered great and transcend boundaries are to some degree subjective. Nevertheless, the following ideas from ML are at least worthy of consideration.</p>
+<pre class="code literal-block"><span></span>1) Regularization of complexity as part of the learning process.
+2) Boosting a set of weak learners into a single strong learner.
+3) Stochastic gradient descent to drive exploration.
+</pre>
+
+
+<p>There are more but these are enough to form the foundation of a trading algorithm with desirable properties. The missing pieces are a model and the data structure(s) to represent the model, a decision mechanism to establish what is 'better', and a set of features.</p>
+<p>The adage that, given a set of relevant features that span the distinguishing properties of the patterns of interest, just about any machine learning algorithm will perform well is not far from the truth. However, in the context of trading signals for markets though, these features will be very noisy, their relevance may be fleeting, yet they need to be robust. 'Quants' who have applied ML methods to trading will attest to significant impact of these problems. A trading algorithm would likely be well-served by addressing these inherent characteristics of trading signals.</p>
+<p>Domain expertise is important for trading. End-to-end techniques like Deep Neural Nets may someday 'crack' the code and derive effective representations that are also interpretable. Meanwhile, developing methods that incorporate existing understanding of market behavior is the goal. A major assumption is the availability of a set of 'weak' features in the sense described above.</p>
+<h2>Restate Again</h2>
+<p>Let's match what machine learning has to offer to the difficulties that need to be addressed.</p>
+<p>Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features.</p>
+<p>[TBD ...]</p>
+</div>
+                </div>
+            </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/wellspring-of-innovation/" class="u-url">Wellspring of Innovation</a></h1>
                 <div class="metadata">
                     <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                         Your Name
@@ -320,10 +377,7 @@ Now try adding [GatsbyJS](<a class="reference external" href="https://www.gatsby
 </div>
 
 
-        <script src="assets/js/all-nocdn.js"></script><!-- fancy dates --><script>
-    moment.locale("en");
-    fancydates(0, "YYYY-MM-DD HH:mm");
-    </script><!-- end fancy dates --><script>
+        <script src="assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {
