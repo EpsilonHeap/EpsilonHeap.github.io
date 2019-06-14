@@ -117,7 +117,7 @@ Markets are noisy and ever changing; moreover, fluctuations can be rather large 
 <ul>
 <li>low signal-to-noise<ul>
 <li>'signals' that convey information about markets are often highly obscured by 'noise'.</li>
-<li>ML algorithms are designed to recognize or approximate patterns that are the most prevalent, and market are mostly noise.</li>
+<li>ML algorithms are designed to recognize or approximate patterns that are the most prevalent, and markets are mostly noise.</li>
 </ul>
 </li>
 <li>regime changes<ul>
@@ -146,9 +146,12 @@ Markets are noisy and ever changing; moreover, fluctuations can be rather large 
 <p>The adage that, given a set of relevant features that span the distinguishing properties of the patterns of interest, just about any machine learning algorithm will perform well is not far from the truth. However, in the context of trading signals for markets though, these features will be very noisy, their relevance may be fleeting, yet they need to be robust. 'Quants' who have applied ML methods to trading will attest to significant impact of these problems. A trading algorithm would likely be well-served by addressing these inherent characteristics of trading signals.</p>
 <p>Domain expertise is important for trading. End-to-end techniques like Deep Neural Nets may someday 'crack' the code and derive effective representations that are also interpretable. Meanwhile, developing methods that incorporate existing understanding of market behavior is the goal. A major assumption is the availability of a set of 'weak' features in the sense described above.</p>
 <h2>Restate Again</h2>
-<p>Let's match what machine learning has to offer to the difficulties that need to be addressed. The term 'alpha' will be loosely associated with informative signals that are conducive for trading decisions.</p>
-<p>Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features. In addition to reducing the 'noise' associated with an alpha, parsimonious models are more robust and generalizes better.</p>
+<p>Let's match what machine learning has to offer to the difficulties that need to be addressed. The term 'alpha' will be loosely associated with informative signals that are conducive for trading decisions.
+ ## Regularization
+Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features. In addition to reducing the 'noise' associated with an alpha, parsimonious models are more robust and generalizes better.</p>
+<h3>Boosting</h3>
 <p>Boosting, as in techniques like AdaBoost and Random Forest, takes a set of weak learners that can be implemented in a uniform manner, and specify a scheme that allows for each to contribute, as part of a larger collective, to the classification or approximation problem at hand. In addition, each weak learner is encouraged to be a specialist that focuses its predictive powers on a limited subset of the whole domain. An assumption is that successful quantitative trading is possible given a set of features with at least some alpha. If so, boosting seems to be an attractive methodology for trading.</p>
+<h3>Stochastic Gradient Descent</h3>
 <p>Stochastic gradient descent, by adding randomness and averaging over a subset to the directed exploration process in learning, enhances the robustness and predictive capabilities of ML algorithms. In addition to making learning large problems (high dimensions and large data sets) possible, sampling and averaging allows for excursions that may not occur if considered as a whole. Introduction of randomness mitigates the undesirable tendency to be 'stuck' in saddle points of high dimensional curved spaces during learning. Again, these are attractive properties that address what is problematic in trading.</p>
 <h2>Promising Start</h2>
 <p>Under the directive of incorporting fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the esscense of the role rather than duplicating the algorithms in a differnt setting.</p>
@@ -192,7 +195,7 @@ factor = (sma_3/sma_10)
 <p><img alt="Shows performance of ML inspired algorithm. Returns of 12.04%, sharpe of 1.34, and drawdown of -4.4%" src="../../images/quant/LongShortMLApproach-100.png" title="Long Short ML 100"></p>
 <p>Every performance metric improved except beta - which is more indicative of both the benchmark and algorithm making similar gains while the market was doing 'well' for longs.</p>
 <p><img alt="Shows performance of 120 version ML inspired algorithm. Returns of 11.65%, sharpe of 1.41, and drawdown of -3.89%" src="../../images/quant/LongShortMLApproach-120.png" title="Long Short ML 120"></p>
-<p>Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections. </p>
+<p>Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections.</p>
 </div>
     </div>
     <aside class="postpromonav"><nav><ul class="pager hidden-print">

@@ -17,7 +17,7 @@ Markets are noisy and ever changing; moreover, fluctuations can be rather large 
 
 * low signal-to-noise
     * 'signals' that convey information about markets are often highly obscured by 'noise'.
-    * ML algorithms are designed to recognize or approximate patterns that are the most prevalent, and market are mostly noise.
+    * ML algorithms are designed to recognize or approximate patterns that are the most prevalent, and markets are mostly noise.
 * regime changes
     * markets are constantly evolving, fluctuations can be large, and statistical characteristics can change quickly.
     * current ML algorithms are specialists that do not handle outliers and new situations well.
@@ -47,11 +47,11 @@ Domain expertise is important for trading. End-to-end techniques like Deep Neura
 # Restate Again
 
 Let's match what machine learning has to offer to the difficulties that need to be addressed. The term 'alpha' will be loosely associated with informative signals that are conducive for trading decisions.
-
+ ## Regularization
 Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features. In addition to reducing the 'noise' associated with an alpha, parsimonious models are more robust and generalizes better.
-
+## Boosting
 Boosting, as in techniques like AdaBoost and Random Forest, takes a set of weak learners that can be implemented in a uniform manner, and specify a scheme that allows for each to contribute, as part of a larger collective, to the classification or approximation problem at hand. In addition, each weak learner is encouraged to be a specialist that focuses its predictive powers on a limited subset of the whole domain. An assumption is that successful quantitative trading is possible given a set of features with at least some alpha. If so, boosting seems to be an attractive methodology for trading.
-
+## Stochastic Gradient Descent
 Stochastic gradient descent, by adding randomness and averaging over a subset to the directed exploration process in learning, enhances the robustness and predictive capabilities of ML algorithms. In addition to making learning large problems (high dimensions and large data sets) possible, sampling and averaging allows for excursions that may not occur if considered as a whole. Introduction of randomness mitigates the undesirable tendency to be 'stuck' in saddle points of high dimensional curved spaces during learning. Again, these are attractive properties that address what is problematic in trading.
 
 # Promising Start
@@ -112,5 +112,4 @@ Every performance metric improved except beta - which is more indicative of both
 
 ![Shows performance of 120 version ML inspired algorithm. Returns of 11.65%, sharpe of 1.41, and drawdown of -3.89%](/images/quant/LongShortMLApproach-120.png "Long Short ML 120")
 
-Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections. 
-
+Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections.
