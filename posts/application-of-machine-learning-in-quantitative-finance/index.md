@@ -62,7 +62,7 @@ Stochastic gradient descent, by adding randomness and averaging over a subset to
 
 # Promising Start
 
-Under the directive of incorporting fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the esscense of the role rather than duplicating the algorithms in a differnt setting.
+Under the directive of incorporating fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the essence of the role rather than duplicating the algorithms in a differnt setting.
 
 Alas, the nature of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful. In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...
 
@@ -110,7 +110,7 @@ Increasing the number of candidate securities is sometimes used to tradeoff gain
 
 ![Shows performance of baseline algorithm using top and botton 120 equities. Returns of 4.7%, sharpe of 0.63, and drawdown of -4.85%](/images/quant/LongShortBaseline-120.png "Long Short 120")
 
-Using the same factors as sources of alpha, a simple implementation of the aforementioned ideas from machine learning were used in an attempt to enhanced the 'information' guiding selection. Again, the and botton 100 securities were considered each day.
+Using the same factors as sources of alpha, a simple implementation of the aforementioned ideas from machine learning were used in an attempt to enhanced the 'information' guiding selection. Again, the top and bottom 100 securities were considered each day.
 
 ![Shows performance of ML inspired algorithm. Returns of 12.04%, sharpe of 1.34, and drawdown of -4.4%](/images/quant/LongShortMLApproach-100.png "Long Short ML 100")
 
