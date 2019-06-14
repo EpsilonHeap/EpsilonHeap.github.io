@@ -96,5 +96,7 @@ def compute(self,today,assets,out,prices,returns):
 
 These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity considerations.
 
+![Alt](/images/quant/test.jpg "Title")
+
 [TBD ...]
 
