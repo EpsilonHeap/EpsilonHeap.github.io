@@ -73,7 +73,8 @@ class CompileOrgmode(PageCompiler):
 
             subprocess.check_call(command)
             with io.open(dest, 'r', encoding='utf-8') as inf:
-                output, shortcode_deps = self.site.apply_shortcodes(inf.read())
+                output, shortcode_deps = self.site.apply_shortcodes(
+                    inf.read(), extra_context={'post': post})
             with io.open(dest, 'w', encoding='utf-8') as outf:
                 outf.write(output)
             if post is None:
@@ -89,9 +90,7 @@ class CompileOrgmode(PageCompiler):
                 req_missing(['emacs', 'org-mode'],
                             'use the orgmode compiler', python=False)
         except subprocess.CalledProcessError as e:
-                raise Exception('Cannot compile {0} -- bad org-mode '
-                                'configuration (return code {1})'.format(
-                                    source, e.returncode))
+            raise Exception('Cannot compile {0} -- bad org-mode configuration (return code {1})'.format(source, e.returncode))
 
     def create_post(self, path, content=None, onefile=False, is_page=False, **kw):
         """Create post file with optional metadata."""
