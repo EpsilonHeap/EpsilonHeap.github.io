@@ -298,7 +298,7 @@ COMPILERS = {
     "txt2tags": ('.t2t',),
     "bbcode": ('.bb',),
     "wiki": ('.wiki',),
-    "orgmode": ('.org'),
+    "orgmode": ('.org',),
     "ipynb": ('.ipynb',),
     "html": ('.html', '.htm'),
     # PHP files are rendered the usual way (i.e. with the full templates).
