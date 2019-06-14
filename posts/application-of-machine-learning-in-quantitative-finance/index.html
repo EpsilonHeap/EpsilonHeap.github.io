@@ -133,7 +133,7 @@ Markets are noisy and ever changing; moreover, fluctuations can be rather large 
 </ul>
 <p>Recognition of the conflicting nature of markets and the current crop of ML algorithms is important in devising new approaches to using the ideas learned from ML in quantitative finance.</p>
 <p>Emphasis here is on introducing the powerful, foundational ideas of ML to the design of trading algorithms as oppose to using existing ML methods as tools for trading. Or as <a href="https://www.youtube.com/watch?v=CW0DUg63lqU">Steve Jobs</a> famously quoted of Picasso in an interview: “good artists borrow, great artists steal.”</p>
-<p>Caveat: The secretive world of traders mean that what is presented here could very well have been known for decades, and this work is embarrassingly elementery. </p>
+<p>Caveat: The secretive world of traders mean that what is presented here could very well have been known for decades, and this work is embarrassingly elementary. </p>
 <h2>Ideas That Transcend</h2>
 <p>What ideas are considered great and transcend boundaries are to some degree subjective. Nevertheless, the following ideas from ML are at least worthy of consideration.</p>
 <pre class="code literal-block"><span></span>1) Regularization of complexity as part of the learning process.
@@ -154,11 +154,36 @@ Markets are noisy and ever changing; moreover, fluctuations can be rather large 
 <p>Under the directive of incorporting fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the esscense of the role rather than duplicating the algorithms in a differnt setting.</p>
 <p>Alas, the nature of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful. In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...</p>
 <p>The work presented here were developed on the <a href="https://www.quantopian.com/">Quantopian</a> platform. Some well-studied signals with 'weak' alphas - they do not work anymore today - were examined for the possibility of being enhanced in systematic fashion.</p>
-<p>Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.</p>
+<p>Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas, and a starting capital of $10,000,000. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.</p>
 <h3>Signals (or Factors)</h3>
 <p>The signals used are commonly refered to as factors. Factors are quantities - eg. price/earnings (P/E) - associate with an equity which are then sorted by some criteria. The sorted list of values are then typically bucketed into quantiles. The virtue of being in a quantile is consider indicative of some important difference from objects in another quantile. For instance, the premise may be that equities within the top 10% of P/E will behave markedly different from equities in the botton 10% in a manner that could lead to profitable trades.</p>
-<p>SMA
-Momentum</p>
+<p>For this demonstration, the factors under consideration are SimpleMovingAverage(...) of prices (and ratios of) as provided by the Quantopian libraries </p>
+<pre class="code literal-block"><span></span>sma_10 = SimpleMovingAverage(inputs=
+                            [USEquityPrices.close],
+                            window_length=10,
+                            mask=shorts_mask)
+sma_3  = SimpleMovingAverage(inputs=
+                            [USEquityPrices.close],
+                            window_length=3,
+                            mask=shorts_mask)
+factor = (sma_3/sma_10)
+</pre>
+
+
+<p>and a slight variation of <a href="https://www.quantopian.com/posts/factor-analysis-momentum-rank">Momentum</a> coded as </p>
+<pre class="code literal-block"><span></span><span class="kr">class</span> <span class="nx">Momentum</span><span class="p">(</span><span class="nx">CustomFactor</span><span class="p">)</span><span class="o">:</span>
+<span class="s2">""" Momentum Factor """</span>
+<span class="nx">inputs</span> <span class="o">=</span> <span class="p">[</span><span class="nx">USEquityPrices</span><span class="p">.</span><span class="nx">close</span><span class="p">,</span>
+          <span class="nx">Returns</span><span class="p">(</span><span class="nx">window_length</span><span class="o">=</span><span class="mi">21</span><span class="p">)]</span>
+<span class="nx">window_length</span> <span class="o">=</span> <span class="mi">252</span>
+
+<span class="nx">def</span> <span class="nx">compute</span><span class="p">(</span><span class="nx">self</span><span class="p">,</span><span class="nx">today</span><span class="p">,</span><span class="nx">assets</span><span class="p">,</span><span class="nx">out</span><span class="p">,</span><span class="nx">prices</span><span class="p">,</span><span class="nx">returns</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">out</span><span class="p">[</span><span class="o">:</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">21</span><span class="p">]</span> <span class="o">-</span> <span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">252</span><span class="p">])</span><span class="o">/</span><span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">252</span><span class="p">]</span> <span class="o">-</span>
+    <span class="p">(</span><span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">21</span><span class="p">])</span><span class="o">/</span><span class="nx">prices</span><span class="p">[</span><span class="o">-</span><span class="mi">21</span><span class="p">])</span> <span class="o">/</span> <span class="nx">np</span><span class="p">.</span><span class="nx">nanstd</span><span class="p">(</span><span class="nx">returns</span><span class="p">,</span> <span class="nx">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre>
+
+
+<p>These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity considerations.</p>
 <p>[TBD ...]</p>
 </div>
     </div>
