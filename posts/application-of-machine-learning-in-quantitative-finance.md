@@ -29,7 +29,7 @@ Recognition of the conflicting nature of markets and the current crop of ML algo
 
 Emphasis here is on introducing the powerful, foundational ideas of ML to the design of trading algorithms as oppose to using existing ML methods as tools for trading. Or as [Steve Jobs](https://www.youtube.com/watch?v=CW0DUg63lqU) famously quoted of Picasso in an interview: “good artists borrow, great artists steal.”
 
-Caveat: The secretive world of traders mean that what is presented here could very well have been known for decades, and this work is embarrassingly elementery. 
+Caveat: The secretive world of traders mean that what is presented here could very well have been known for decades, and this work is embarrassingly elementary. 
 
 # Ideas That Transcend
 What ideas are considered great and transcend boundaries are to some degree subjective. Nevertheless, the following ideas from ML are at least worthy of consideration.
@@ -62,14 +62,39 @@ Alas, the nature of trading is to share little and protect intellectual properti
 
 The work presented here were developed on the [Quantopian](https://www.quantopian.com/) platform. Some well-studied signals with 'weak' alphas - they do not work anymore today - were examined for the possibility of being enhanced in systematic fashion.
 
-Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.
+Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas, and a starting capital of $10,000,000. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.
 
 ## Signals (or Factors)
 
 The signals used are commonly refered to as factors. Factors are quantities - eg. price/earnings (P/E) - associate with an equity which are then sorted by some criteria. The sorted list of values are then typically bucketed into quantiles. The virtue of being in a quantile is consider indicative of some important difference from objects in another quantile. For instance, the premise may be that equities within the top 10% of P/E will behave markedly different from equities in the botton 10% in a manner that could lead to profitable trades.
 
-SMA
-Momentum
+For this demonstration, the factors under consideration are SimpleMovingAverage(...) of prices (and ratios of) as provided by the Quantopian libraries 
+```
+sma_10 = SimpleMovingAverage(inputs=
+                            [USEquityPrices.close],
+                            window_length=10,
+                            mask=shorts_mask)
+sma_3  = SimpleMovingAverage(inputs=
+                            [USEquityPrices.close],
+                            window_length=3,
+                            mask=shorts_mask)
+factor = (sma_3/sma_10)
+```
+
+and a slight variation of [Momentum](https://www.quantopian.com/posts/factor-analysis-momentum-rank) coded as 
+```
+class Momentum(CustomFactor):
+""" Momentum Factor """
+inputs = [USEquityPrices.close,
+          Returns(window_length=21)]
+window_length = 252
+
+def compute(self,today,assets,out,prices,returns):
+    out[:] = ((prices[-21] - prices[-252])/prices[-252] -
+    (prices[-1] - prices[-21])/prices[-21]) / np.nanstd(returns, axis=0)
+```
+
+These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity considerations.
 
 [TBD ...]
 
