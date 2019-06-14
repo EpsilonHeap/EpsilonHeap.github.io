@@ -94,9 +94,21 @@ def compute(self,today,assets,out,prices,returns):
     (prices[-1] - prices[-21])/prices[-21]) / np.nanstd(returns, axis=0)
 ```
 
-These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity considerations.
+These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity and other considerations. Note that the date on the right hand side reflects where the cursor (dots) was located.
 
 ![Shows performance of baseline algorithm. Returns of 5.48%, sharpe of 0.69, and drawdown of -5.11%](/images/quant/LongShortBaseline.png "Long Short Baseline")
 
-[TBD ...]
+Increasing the number of securities for consideration is sometimes used to tradeoff gains for a reduction in variability or drawdown. Using 120 instead of 100 produced slightly different numbers. Notably the sharpe ratio decreased so the tradeoff favors using 100 in this case.
+
+![Shows performance of baseline algorithm using top and botton 120 equities. Returns of 4.7%, sharpe of 0.63, and drawdown of -4.85%](/images/quant/LongShortBaseline-120.png "Long Short 120")
+
+Using the same factors as sources of alpha, a simple implementation of the aforementioned ideas from machine learning were used in an attempt to enhanced the 'information' guiding selection. Again, the and botton 100 securities were considered each day.
+
+![Shows performance of ML inspired algorithm. Returns of 12.04%, sharpe of 1.34, and drawdown of -4.4%](/images/quant/LongShortMLApproach-100.png "Long Short ML 100")
+
+Every performance metric improved except beta - which is more indicative of both the benchmark and algorithm making similar gains while the market was doing 'well' while going long.
+
+![Shows performance of 120 version ML inspired algorithm. Returns of 11.65%, sharpe of 1.41, and drawdown of -3.89%](/images/quant/LongShortMLApproach-120.png "Long Short ML 120")
+
+Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections. 
 
