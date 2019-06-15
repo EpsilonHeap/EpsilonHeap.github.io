@@ -64,9 +64,9 @@ Stochastic gradient descent, by adding randomness and averaging over a subset to
 
 Under the directive of incorporating fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the essence of the role rather than duplicating the algorithms in a differnt setting.
 
-Alas, the nature of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful. In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...
+Alas, the nature of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful: use the ideas, not a particular implementation.  In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...
 
-The work presented here were developed on the [Quantopian](https://www.quantopian.com/) platform. Some well-studied signals with 'weak' alphas - they do not work anymore today - were examined for the possibility of being enhanced in systematic fashion.
+The work presented here were developed on the [Quantopian](https://www.quantopian.com/) platform. Some well-studied signals with 'weak' alphas - they have lost their effectiveness today - were examined for the possibility of being enhanced in systematic fashion.
 
 Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas, and a starting capital of $10,000,000. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.
 
