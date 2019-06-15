@@ -50,7 +50,7 @@ Let's match what machine learning has to offer to the difficulties that need to 
 
 ## Regularization
 
-Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features. In addition to reducing the 'noise' associated with an alpha, parsimonious models are more robust and generalizes better.
+Regularization can be interpreted in several ways. A useful view is that regularization is used to distinguish 'noise' from 'signal' with regards to the weights parameterizing a family of models under consideration. 'Signal' weights should be much larger than 'noise' weights. Something like regularization is needed for trading features. In addition to reducing the 'noise' associated with an alpha, parsimonious models are more robust and generalize better.
 
 ## Boosting
 
@@ -68,7 +68,7 @@ Alas, the nature of trading is to share little and protect intellectual properti
 
 The work presented here were developed on the [Quantopian](https://www.quantopian.com/) platform. Some well-studied signals with 'weak' alphas - they have lost their effectiveness today - were examined for the possibility of being enhanced in systematic fashion.
 
-Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less that what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas, and a starting capital of $10,000,000. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you.
+Given that the results are compared on a relative basis, practicle concerns such as commissions (fees paid to trade) and slippage (advertised prices are less than what is actually paid) could be neglected. But, these results do include slippage and commission. They were developed with the hopes of being profitable algorithms after all. The period will be from 01/04/2011 to 07/30/2012 where the signals under consideration still had some alphas, and a starting capital of $10,000,000. Slippage is 3 basis points with a volume limit of 0.1. Per trade cost is $2.95. Do not worry if these numbers are gibberish to you. Remember, the relative  performance is what is being illustrated.
 
 ## Signals (or Factors)
 
@@ -102,20 +102,20 @@ def compute(self,today,assets,out,prices,returns):
 
 ## Results
 
-These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and botton 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity and other considerations. Note that the date on the right hand side reflects where the cursor (dots) was located.
+These factors will be used for selection in a long/short (L/S) portfolio with a dollar weight of 54% longs and 46% shorts. Instead of quantiles, the top and bottom 100 securities are candidates for investment allocation. On any day, the actual number of longs and shorts can vary depending on liquidity and other considerations. Note that the date on the right hand side reflects where the cursor (dots) was located.
 
-![Shows performance of baseline algorithm. Returns of 5.48%, sharpe of 0.69, and drawdown of -5.11%](/images/quant/LongShortBaseline.png "Long Short Baseline")
+![Shows performance of baseline algorithm. Returns of 5.48%, Sharpe of 0.69, and drawdown of -5.11%](/images/quant/LongShortBaseline.png "Long Short Baseline")
 
-Increasing the number of candidate securities is sometimes used to tradeoff gains for a reduction in variability or drawdown. Using 120 instead of 100 produced slightly different numbers. Notably the sharpe ratio decreased so the tradeoff favors using 100 in this case.
+Increasing the number of candidate securities is sometimes used to trade-off gains for a reduction in variability or drawdown. Using 120 instead of 100 produced slightly different numbers. Notably the Sharpe ratio decreased so the trade-off favors using 100 in this case.
 
-![Shows performance of baseline algorithm using top and botton 120 equities. Returns of 4.7%, sharpe of 0.63, and drawdown of -4.85%](/images/quant/LongShortBaseline-120.png "Long Short 120")
+![Shows performance of baseline algorithm using top and m 120 equities. Returns of 4.7%, Sharpe of 0.63, and drawdown of -4.85%](/images/quant/LongShortBaseline-120.png "Long Short 120")
 
 Using the same factors as sources of alpha, a simple implementation of the aforementioned ideas from machine learning were used in an attempt to enhanced the 'information' guiding selection. Again, the top and bottom 100 securities were considered each day.
 
-![Shows performance of ML inspired algorithm. Returns of 12.04%, sharpe of 1.34, and drawdown of -4.4%](/images/quant/LongShortMLApproach-100.png "Long Short ML 100")
+![Shows performance of ML inspired algorithm. Returns of 12.04%, Sharpe of 1.34, and drawdown of -4.4%](/images/quant/LongShortMLApproach-100.png "Long Short ML 100")
 
-Every performance metric improved except beta - which is more indicative of both the benchmark and algorithm making similar gains while the market was doing 'well' for longs.
+Every performance metric improved except beta - which is more indicative of both the benchmark and algorithm making similar gains while the stock market was doing 'well' for longs.
 
-![Shows performance of 120 version ML inspired algorithm. Returns of 11.65%, sharpe of 1.41, and drawdown of -3.89%](/images/quant/LongShortMLApproach-120.png "Long Short ML 120")
+![Shows performance of 120 version of ML inspired algorithm. Returns of 11.65%, Sharpe of 1.41, and drawdown of -3.89%](/images/quant/LongShortMLApproach-120.png "Long Short ML 120")
 
-Increasing the number of candidates to 120 again exhibited a tradeoff of gains for volatility. This time however, the sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections.
+Increasing the number of candidates to 120 again exhibited a trade-off of gains for volatility. This time however, the Sharpe ratio increased along with a reduced drawdown. A rather encouraging result; the incremental add of securities contributed additional alpha - a sign that the algorithm is effective in reducing 'noise' even for what would be considered 'down-the-line' selections.
