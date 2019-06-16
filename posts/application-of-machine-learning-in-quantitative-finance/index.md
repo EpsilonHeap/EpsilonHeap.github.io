@@ -64,7 +64,7 @@ Stochastic gradient descent, by adding randomness and averaging over a subset to
 
 Under the directive of incorporating fundamental ideas from ML to enhance existing practices in quantitaive trading, a simple algorithm was constructed with components analogous to those from ML described in the last section. Again, the emphasis in on capturing the essence of the role rather than duplicating the algorithms in a differnt setting.
 
-Alas, the nature of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful: use the ideas, not a particular implementation.  In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...
+Alas, the business of trading is to share little and protect intellectual properties. Therefore, details will be scant. The main take-away is that this direction of research could be fruitful: use the ideas, not a particular implementation.  In a business where most everyone is sharp and hungry, some hints may be all that is needed to give away everything. Here goes ...
 
 The work presented here were developed on the [Quantopian](https://www.quantopian.com/) platform. Some well-studied signals with 'weak' alphas - they have lost their effectiveness today - were examined for the possibility of being enhanced in systematic fashion.
 
